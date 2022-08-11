@@ -1,3 +1,5 @@
+import {filterColors} from "~/constants/colors";
+
 export const page3Style = {
-    backgroundColor: 'black'
+    backgroundColor: filterColors.radissonMain.hex
 };

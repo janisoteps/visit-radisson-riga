@@ -647,19 +647,9 @@ video {
   color: rgb(7 89 133 / var(--tw-text-opacity));
 }
 
-.text-sky-500 {
-  --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
-}
-
 .decoration-sky-800 {
   -webkit-text-decoration-color: #075985;
           text-decoration-color: #075985;
-}
-
-.decoration-sky-500 {
-  -webkit-text-decoration-color: #0ea5e9;
-          text-decoration-color: #0ea5e9;
 }
 
 .invert {

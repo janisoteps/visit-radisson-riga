@@ -1,5 +1,4 @@
 import VerticalCenterContainer from "~/components/layout/shared/VerticalCenterContainer";
-import IntroLogo from "~/components/layout/intro/IntroLogo";
 
 interface Page1Props {
 
@@ -14,7 +13,6 @@ export default function Page1({}: Page1Props) {
                 height: '100vh'
             }}
         >
-            <IntroLogo />
             <VerticalCenterContainer>
                 <div
                     style={{
