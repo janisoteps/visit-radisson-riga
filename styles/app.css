@@ -39,3 +39,18 @@
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+
+.entrance-fade-move {
+    animation: fade-in-move-down 1s;
+}
+
+@keyframes fade-in-move-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
