@@ -26,6 +26,7 @@ export default function Page1({}: Page1Props) {
                             color: 'white',
                             fontWeight: 700
                         }}
+                        className={'entrance-fade-move'}
                     >
                         Main Slogan Phrase
                     </div>
@@ -35,6 +36,7 @@ export default function Page1({}: Page1Props) {
                             color: 'white',
                             fontWeight: 400
                         }}
+                        className={'entrance-fade-move'}
                     >
                         A nice sounding blurb that represents us well
                     </div>

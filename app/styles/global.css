@@ -715,6 +715,35 @@ video {
   /* Also needed for space (tweak if needed) */
 }
 
+.entrance-fade-move {
+  -webkit-animation: fade-in-move-down 1s;
+          animation: fade-in-move-down 1s;
+}
+
+@-webkit-keyframes fade-in-move-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-move-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));

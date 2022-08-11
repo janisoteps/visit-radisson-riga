@@ -12,6 +12,10 @@ export const filterColors = {
     },
     radissonMainLightBlue: {
         hex: '#86bdd2',
-        rg: '53, 74, 83'
+        rgb: '53, 74, 83'
+    },
+    bluBlue: {
+        hex: '#293a75',
+        rgb: '26, 23, 46'
     }
-}
+};
