@@ -5,6 +5,8 @@ import Page2 from "~/components/main/pages/Page2";
 import {page2Style} from "~/components/main/pages/page2Style";
 import Page3 from "~/components/main/pages/Page3";
 import {page3Style} from "~/components/main/pages/page3Style";
+import Page4 from "~/components/main/pages/Page4";
+import {page4Style} from "~/components/main/pages/page4Style";
 
 
 interface HomePageProps {
@@ -25,6 +27,10 @@ export default function HomePage({}: HomePageProps) {
             content: <Page3 />,
             style: page3Style
         },
+        {
+            content: <Page4 />,
+            style: page4Style
+        },
     ];
 
     if (typeof window !== 'undefined' && !!window) {
@@ -35,7 +41,7 @@ export default function HomePage({}: HomePageProps) {
                 slides={parallaxSlides}
                 parallax={{
                     offset: 0.6,
-                    type: SlideParallaxType.reveal
+                    type: SlideParallaxType.cover
                 }}
             />
         )

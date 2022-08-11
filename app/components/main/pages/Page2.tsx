@@ -11,7 +11,7 @@ export default function Page2({}: Page2Props) {
                 height: '100vh'
             }}
         >
-            Hello page 2 :)
+
         </div>
     )
 }
