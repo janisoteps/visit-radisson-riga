@@ -4,7 +4,12 @@ interface VideoPlayerProps {
 
 export default function VideoPlayer({}: VideoPlayerProps) {
     return (
-        <div>
+        <div
+            style={{
+                width: '100%',
+                height: '100%'
+            }}
+        >
             <div className={'vimeo-container'}>
                 <iframe
                     src="https://player.vimeo.com/video/738517231?h=2a4bd6e0b8&badge=0&autopause=0&autoplay=1&player_id=0&app_id=58479&background=1"
