@@ -52,7 +52,7 @@ export default function Page1({}: Page1Props) {
             >
                 <div
                     style={{
-                        width: '200px',
+                        width: '300px',
                         textAlign: 'center',
                         fontSize: '1.2vw',
                         color: 'white',
