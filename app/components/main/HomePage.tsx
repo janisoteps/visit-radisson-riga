@@ -11,6 +11,8 @@ import Page5 from "~/components/main/pages/Page5";
 import {page5Style} from "~/components/main/pages/page5Style";
 import Page6 from "~/components/main/pages/Page6";
 import {page6Style} from "~/components/main/pages/page6Style";
+import Page7 from "~/components/main/pages/Page7";
+import {page7Style} from "~/components/main/pages/page7Style";
 
 
 interface HomePageProps {
@@ -42,6 +44,10 @@ export default function HomePage({}: HomePageProps) {
         {
             content: <Page6 />,
             style: page6Style
+        },
+        {
+            content: <Page7 />,
+            style: page7Style
         },
     ];
 
