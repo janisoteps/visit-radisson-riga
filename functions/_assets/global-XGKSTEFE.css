@@ -642,31 +642,6 @@ video {
   font-style: italic;
 }
 
-.text-sky-800 {
-  --tw-text-opacity: 1;
-  color: rgb(7 89 133 / var(--tw-text-opacity));
-}
-
-.text-sky-600 {
-  --tw-text-opacity: 1;
-  color: rgb(2 132 199 / var(--tw-text-opacity));
-}
-
-.decoration-violet-400 {
-  -webkit-text-decoration-color: #a78bfa;
-          text-decoration-color: #a78bfa;
-}
-
-.decoration-sky-800 {
-  -webkit-text-decoration-color: #075985;
-          text-decoration-color: #075985;
-}
-
-.decoration-sky-600 {
-  -webkit-text-decoration-color: #0284c7;
-          text-decoration-color: #0284c7;
-}
-
 .invert {
   --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
