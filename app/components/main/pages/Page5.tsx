@@ -12,7 +12,8 @@ export default function Page5() {
                 style={{
                     width: '60%',
                     backgroundColor: 'rgba(49,52,60,0.6)',
-                    height: '100%'
+                    height: '100%',
+                    paddingTop: '3vw'
                 }}
             >
                 <div

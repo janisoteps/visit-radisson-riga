@@ -716,8 +716,8 @@ video {
 }
 
 .entrance-fade-move {
-  -webkit-animation: fade-in-move-down 1s;
-          animation: fade-in-move-down 1s;
+  -webkit-animation: fade-in-move-down 2s;
+          animation: fade-in-move-down 2s;
 }
 
 @-webkit-keyframes fade-in-move-down {

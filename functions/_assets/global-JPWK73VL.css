@@ -716,14 +716,14 @@ video {
 }
 
 .entrance-fade-move {
-  -webkit-animation: fade-in-move-down 1s;
-          animation: fade-in-move-down 1s;
+  -webkit-animation: fade-in-move-down 0.7s;
+          animation: fade-in-move-down 0.7s;
 }
 
 @-webkit-keyframes fade-in-move-down {
   0% {
     opacity: 0;
-    transform: translateY(-5rem);
+    transform: translateY(-3rem);
   }
 
   100% {
@@ -735,7 +735,7 @@ video {
 @keyframes fade-in-move-down {
   0% {
     opacity: 0;
-    transform: translateY(-5rem);
+    transform: translateY(-3rem);
   }
 
   100% {
