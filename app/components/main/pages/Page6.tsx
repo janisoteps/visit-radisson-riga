@@ -82,7 +82,7 @@ export default function Page6() {
                     </div>
                     <div
                         style={{
-                            fontSize: '1.5vw',
+                            fontSize: '1.4vw',
                             fontWeight: 300,
                             margin: '0.5vw auto',
                             color: 'white'
