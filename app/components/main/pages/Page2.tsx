@@ -60,30 +60,7 @@ export default function Page2({}: Page2Props) {
                 }}
             >
             </div>
-
-            {/*<div*/}
-            {/*    style={{*/}
-            {/*        position: 'absolute',*/}
-            {/*        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/map-old-town.png?alt=media&token=c30cec74-db8a-476f-a49a-ac8e665b9837")',*/}
-            {/*        backgroundSize: 'contain',*/}
-            {/*        backgroundPosition: 'center',*/}
-            {/*        backgroundRepeat: 'no-repeat',*/}
-            {/*        top: '15vw',*/}
-            {/*        left: '37vw',*/}
-            {/*        height: '9vw',*/}
-            {/*        width: '7vw',*/}
-            {/*        cursor: 'pointer'*/}
-            {/*    }}*/}
-            {/*    className={'scale-90 hover:scale-100 ease-in-out duration-300'}*/}
-            {/*    onMouseEnter={() => {*/}
-            {/*        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-town-Lobby-and-Bar.webp?alt=media&token=5773f269-8bc6-4c37-b6bd-04aff10fcfb2')*/}
-            {/*    }}*/}
-            {/*    onMouseLeave={() => {*/}
-            {/*        setPreviewImageUrl(null);*/}
-            {/*    }}*/}
-            {/*>*/}
-            {/*</div>*/}
-
+            
             <div
                 style={{
                     position: 'absolute',
