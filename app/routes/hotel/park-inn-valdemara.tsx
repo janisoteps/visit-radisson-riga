@@ -1,6 +1,6 @@
-import Page4 from "~/components/main/pages/Page4";
+import Page5 from "~/components/main/pages/Page5";
 
-export default function RadissonOldTownRiga() {
+export default function ParkInnValdemara() {
 
     return (
         <div>
@@ -11,7 +11,7 @@ export default function RadissonOldTownRiga() {
                     left: 0,
                     width: '100vw',
                     height: '100vh',
-                    backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-mood-1.webp?alt=media&token=b45143ed-8920-45e6-bebe-3515127e8af7")',
+                    backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-1.webp?alt=media&token=d55c925b-cae0-4c4d-81c3-e9f53d09ffa3")',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     zIndex: 0
@@ -28,7 +28,7 @@ export default function RadissonOldTownRiga() {
                     zIndex: 1
                 }}
             >
-                <Page4 />
+                <Page5 />
             </div>
         </div>
     )

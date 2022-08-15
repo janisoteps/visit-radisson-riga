@@ -6,14 +6,15 @@ export default function Page8() {
         <div
             style={{
                 width: '100vw',
-                height: '100vh',
                 display: 'flex',
+                minHeight: '100vh',
+                height: 'fit-content',
+                backgroundColor: `rgba(${filterColors.bluBlue.rgb},0.7)`,
             }}
         >
             <div
                 style={{
                     width: '40%',
-                    height: '100%'
                 }}
             >
                 <div
@@ -43,8 +44,8 @@ export default function Page8() {
             <div
                 style={{
                     width: '60%',
-                    height: '100%',
-                    backgroundColor: `rgba(${filterColors.bluBlue.rgb},0.7)`,
+                    minHeight: '100%',
+                    height: 'fit-content',
                 }}
             >
                 <div
