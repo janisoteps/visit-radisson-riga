@@ -4,16 +4,18 @@ export default function Page5() {
         <div
             style={{
                 width: '100vw',
-                height: '100vh',
+                minHeight: '100vh',
+                height: 'fit-content',
+                backgroundColor: 'rgba(49,52,60,0.6)',
                 display: 'flex'
             }}
         >
             <div
                 style={{
                     width: '60%',
-                    backgroundColor: 'rgba(49,52,60,0.6)',
-                    height: '100%',
-                    paddingTop: '3vw'
+                    paddingTop: '3vw',
+                    minHeight: '100%',
+                    height: 'fit-content',
                 }}
             >
                 <div
@@ -23,7 +25,7 @@ export default function Page5() {
                     }}
                 >
                     <img
-                        alt={'Par Inn'}
+                        alt={'Park Inn'}
                         style={{
                             width: '100%',
                             height: 'auto'

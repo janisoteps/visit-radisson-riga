@@ -4,14 +4,15 @@ export default function Page6() {
         <div
             style={{
                 width: '100vw',
-                height: '100vh',
                 display: 'flex',
+                minHeight: '100vh',
+                height: 'fit-content',
+                backgroundColor: 'rgba(49,52,60,0.6)',
             }}
         >
             <div
                 style={{
                     width: '40%',
-                    height: '100%'
                 }}
             >
                 <div
@@ -40,9 +41,9 @@ export default function Page6() {
             <div
                 style={{
                     width: '60%',
-                    backgroundColor: 'rgba(49,52,60,0.6)',
-                    height: '100%',
-                    paddingTop: '3vw'
+                    paddingTop: '3vw',
+                    minHeight: '100%',
+                    height: 'fit-content',
                 }}
             >
                 <div
