@@ -26,23 +26,23 @@ export default function HomePage({}: HomePageProps) {
             style: pageStyles.page3Style
         },
         {
-            content: <Page4 />,
+            content: <Page4 isHome={true} />,
             style: pageStyles.page4Style
         },
         {
-            content: <Page5 />,
+            content: <Page5 isHome={true} />,
             style: pageStyles.page5Style
         },
         {
-            content: <Page6 />,
+            content: <Page6 isHome={true} />,
             style: pageStyles.page6Style
         },
         {
-            content: <Page7 />,
+            content: <Page7 isHome={true} />,
             style: pageStyles.page7Style
         },
         {
-            content: <Page8 />,
+            content: <Page8 isHome={true} />,
             style: pageStyles.page8Style
         },
     ];

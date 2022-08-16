@@ -1,6 +1,10 @@
 import {filterColors} from "~/constants/colors";
 
-export default function Page7() {
+interface Page7Props {
+    isHome: boolean
+}
+
+export default function Page7({isHome}: Page7Props) {
 
     return (
         <div
@@ -8,7 +12,7 @@ export default function Page7() {
                 width: '100vw',
                 display: 'flex',
                 minHeight: '100vh',
-                height: 'fit-content',
+                height: isHome ? '100vh' : 'fit-content',
                 backgroundColor: `rgba(${filterColors.bluBlue.rgb},0.7)`,
             }}
         >
@@ -16,7 +20,7 @@ export default function Page7() {
                 style={{
                     width: '60%',
                     minHeight: '100%',
-                    height: 'fit-content',
+                    height: isHome ? '100%' : 'fit-content',
                 }}
             >
                 <div
@@ -44,7 +48,7 @@ export default function Page7() {
                 >
                     <div
                         style={{
-                            fontSize: '4vw',
+                            fontSize: '2vw',
                             fontWeight: 600,
                             margin: '0.2vw auto',
                             color: 'white',
