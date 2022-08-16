@@ -1,4 +1,8 @@
-export default function Page6() {
+interface Page6props {
+    isHome: boolean
+}
+
+export default function Page6({isHome}: Page6props) {
 
     return (
         <div
@@ -6,7 +10,7 @@ export default function Page6() {
                 width: '100vw',
                 display: 'flex',
                 minHeight: '100vh',
-                height: 'fit-content',
+                height: isHome ? '100vh' : 'fit-content',
                 backgroundColor: 'rgba(49,52,60,0.6)',
             }}
         >
@@ -43,7 +47,7 @@ export default function Page6() {
                     width: '60%',
                     paddingTop: '3vw',
                     minHeight: '100%',
-                    height: 'fit-content',
+                    height: isHome ? '100%' : 'fit-content',
                 }}
             >
                 <div
@@ -71,7 +75,7 @@ export default function Page6() {
                 >
                     <div
                         style={{
-                            fontSize: '4vw',
+                            fontSize: '2vw',
                             fontWeight: 600,
                             margin: '0.2vw auto',
                             color: 'white',

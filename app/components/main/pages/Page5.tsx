@@ -1,11 +1,15 @@
-export default function Page5() {
+interface Page5Props {
+    isHome: boolean
+}
+
+export default function Page5({isHome}: Page5Props) {
 
     return (
         <div
             style={{
                 width: '100vw',
                 minHeight: '100vh',
-                height: 'fit-content',
+                height: isHome ? '100vh' : 'fit-content',
                 backgroundColor: 'rgba(49,52,60,0.6)',
                 display: 'flex'
             }}
@@ -15,7 +19,7 @@ export default function Page5() {
                     width: '60%',
                     paddingTop: '3vw',
                     minHeight: '100%',
-                    height: 'fit-content',
+                    height: isHome ? '100%' : 'fit-content',
                 }}
             >
                 <div
@@ -43,7 +47,7 @@ export default function Page5() {
                 >
                     <div
                         style={{
-                            fontSize: '4vw',
+                            fontSize: '2vw',
                             fontWeight: 600,
                             margin: '0.2vw auto',
                             color: 'white',

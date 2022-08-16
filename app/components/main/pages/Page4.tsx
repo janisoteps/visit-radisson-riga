@@ -1,10 +1,10 @@
 import {filterColors} from "~/constants/colors";
 
 interface Page4Props {
-
+    isHome: boolean
 }
 
-export default function Page4({}: Page4Props) {
+export default function Page4({isHome}: Page4Props) {
     const innerMargin: number = 6;
 
     return (
@@ -12,7 +12,7 @@ export default function Page4({}: Page4Props) {
             style={{
                 width: '100vw',
                 minHeight: '100vh',
-                height: 'fit-content',
+                height: isHome ? '100vh' : 'fit-content',
                 display: 'flex',
                 backgroundColor: `rgba(${filterColors.radissonMain.rgb}, 0.70)`,
             }}
@@ -21,7 +21,7 @@ export default function Page4({}: Page4Props) {
                 style={{
                     width: '60%',
                     minHeight: '100%',
-                    height: 'fit-content',
+                    height: isHome ? '100%' : 'fit-content',
                     paddingBottom: '100px'
                 }}
             >
@@ -41,7 +41,7 @@ export default function Page4({}: Page4Props) {
                             margin: '0 auto'
                         }}
                         alt={'Radisson Old Town Riga Logo'}
-                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-logo-1.png?alt=media&token=566d5957-09a1-4b9b-b16d-6d8ad8fe5e3d'}
+                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-logo-1.png?alt=media&token=0d595b34-cdfc-4016-b9a0-31ba95cdb5f2'}
                     />
                     <div
                         style={{

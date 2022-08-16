@@ -6,7 +6,8 @@ export default function Index() {
             style={{
                 fontFamily: "system-ui, sans-serif",
                 lineHeight: "1.4",
-                margin: 0
+                margin: 0,
+                overflow: 'scroll'
             }}
         >
             <HomePage />
