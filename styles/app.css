@@ -58,3 +58,18 @@ body {
         transform: translateY(0);
     }
 }
+
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
