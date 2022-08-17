@@ -563,10 +563,6 @@ video {
   position: relative;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -768,6 +764,21 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel-inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hover\:scale-100:hover {
