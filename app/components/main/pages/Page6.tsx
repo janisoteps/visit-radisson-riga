@@ -1,3 +1,5 @@
+import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
+
 interface Page6props {
     isHome: boolean
 }
@@ -19,17 +21,17 @@ export default function Page6({isHome}: Page6props) {
                     width: '40%',
                 }}
             >
-                <div
-                    style={{
-                        height: '50%',
-                        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-4.webp?alt=media&token=623d16e7-9d64-4970-81e8-64a84f98914d")',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        borderWidth: '10px 10px 5px 10px',
-                        borderColor: 'white'
-                    }}
-                >
-                </div>
+                <ImageCarouselParent
+                    width={'100%'}
+                    height={'50%'}
+                    borderWidth={'10px 10px 5px 10px'}
+                    urlList={[
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-1.webp?alt=media&token=e576cad8-1096-4d72-a737-7702589dd7e7',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-2.webp?alt=media&token=76e991cd-99c7-4cf2-a3a8-4fd28fadf170',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-4.webp?alt=media&token=623d16e7-9d64-4970-81e8-64a84f98914d',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-5.webp?alt=media&token=a63aea8b-2d19-4e77-a139-ddff6bf5bad2'
+                    ]}
+                />
                 <div
                     style={{
                         height: '50%',

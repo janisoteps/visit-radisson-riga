@@ -1,4 +1,5 @@
 import {filterColors} from "~/constants/colors";
+import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 
 interface Page8Props {
     isHome: boolean
@@ -21,17 +22,18 @@ export default function Page8({isHome}: Page8Props) {
                     width: '40%',
                 }}
             >
-                <div
-                    style={{
-                        height: '50%',
-                        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-6.webp?alt=media&token=16d5062b-933f-48ce-a8a4-67cdc431986b")',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        borderWidth: '10px 10px 5px 10px',
-                        borderColor: 'white'
-                    }}
-                >
-                </div>
+                <ImageCarouselParent
+                    width={'100%'}
+                    height={'50%'}
+                    borderWidth={'10px 10px 5px 10px'}
+                    urlList={[
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-6.webp?alt=media&token=16d5062b-933f-48ce-a8a4-67cdc431986b',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-1.webp?alt=media&token=994e7e2e-e351-419c-a1a3-8812fdb8909d',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-2.webp?alt=media&token=10f291e6-8e6c-4184-a60f-9310d0510b8b',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-4.webp?alt=media&token=6bf66ff3-9053-4eaa-a0aa-5cdd92a7e756',
+                    ]}
+                />
+
                 <div
                     style={{
                         height: '50%',

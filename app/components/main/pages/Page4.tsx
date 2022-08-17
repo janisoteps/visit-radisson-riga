@@ -1,4 +1,5 @@
 import {filterColors} from "~/constants/colors";
+import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 
 interface Page4Props {
     isHome: boolean
@@ -6,6 +7,7 @@ interface Page4Props {
 
 export default function Page4({isHome}: Page4Props) {
     const innerMargin: number = 6;
+
 
     return (
         <div
@@ -19,7 +21,7 @@ export default function Page4({isHome}: Page4Props) {
         >
             <div
                 style={{
-                    width: '60%',
+                    width: '55%',
                     minHeight: '100%',
                     height: isHome ? '100%' : 'fit-content',
                     paddingBottom: '100px'
@@ -114,23 +116,23 @@ export default function Page4({isHome}: Page4Props) {
                     </div>
                 </div>
             </div>
+
             <div
                 style={{
-                    width: '40%',
+                    width: '45%',
                     display: 'flex'
                 }}
             >
-                <div
-                    style={{
-                        width: '60%',
-                        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/exterior-Radisson-Old-Town.webp?alt=media&token=b3955c8c-7637-4a6e-b50b-b8002a123b8b")',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        borderWidth: '10px 5px 10px 10px',
-                        borderColor: 'white'
-                    }}
-                >
-                </div>
+                <ImageCarouselParent
+                    width={'60%'}
+                    height={'100%'}
+                    borderWidth={'10px 5px 10px 10px'}
+                    urlList={[
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/exterior-Radisson-Old-Town.webp?alt=media&token=b3955c8c-7637-4a6e-b50b-b8002a123b8b',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-Town-Standard-Room-Park-View-King-4.webp?alt=media&token=0c259449-f6f0-4942-88a2-4a812b3213b1'
+                    ]}
+                />
+
                 <div
                     style={{
                         width: '40%'
@@ -138,18 +140,7 @@ export default function Page4({isHome}: Page4Props) {
                 >
                     <div
                         style={{
-                            height: '33%',
-                            backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-Town-Standard-Room-Park-View-King-4.webp?alt=media&token=0c259449-f6f0-4942-88a2-4a812b3213b1")',
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            borderWidth: '10px 10px 5px 5px',
-                            borderColor: 'white'
-                        }}
-                    >
-                    </div>
-                    <div
-                        style={{
-                            height: '33%',
+                            height: '50%',
                             backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-Town-Superior-Room-Corner-1.webp?alt=media&token=2d265d9e-4e9e-4756-914a-fb0041c92594")',
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
@@ -160,7 +151,7 @@ export default function Page4({isHome}: Page4Props) {
                     </div>
                     <div
                         style={{
-                            height: '34%',
+                            height: '50%',
                             backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-town-Lobby-and-Bar.webp?alt=media&token=5773f269-8bc6-4c37-b6bd-04aff10fcfb2")',
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',

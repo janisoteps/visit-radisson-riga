@@ -1,3 +1,5 @@
+import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
+
 interface Page5Props {
     isHome: boolean
 }
@@ -109,17 +111,19 @@ export default function Page5({isHome}: Page5Props) {
                     width: '40%'
                 }}
             >
-                <div
-                    style={{
-                        height: '50%',
-                        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/RIXPV-Exterior-1.webp?alt=media&token=50d0f899-2da7-487d-9259-498a01bc6a5a")',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        borderWidth: '10px 10px 5px 10px',
-                        borderColor: 'white'
-                    }}
-                >
-                </div>
+                <ImageCarouselParent
+                    width={'100%'}
+                    height={'50%'}
+                    borderWidth={'10px 10px 5px 10px'}
+                    urlList={[
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/RIXPV-Exterior-1.webp?alt=media&token=50d0f899-2da7-487d-9259-498a01bc6a5a',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-2.webp?alt=media&token=d6f6be2a-51a1-4aa5-b317-b0ce5a20d97c',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-3.webp?alt=media&token=376811b5-d22d-45a5-b4f9-7bd1981e12e1',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-4.webp?alt=media&token=a8eb8854-55d1-4c04-bb50-dcc9f9609006',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-5.webp?alt=media&token=4e11f3d2-a26f-4db6-ab12-ab7a0fc7211b'
+                    ]}
+                />
+
                 <div
                     style={{
                         height: '50%',
