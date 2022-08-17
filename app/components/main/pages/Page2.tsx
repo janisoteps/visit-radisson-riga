@@ -34,7 +34,7 @@ export default function Page2({}: Page2Props) {
                     }}
                     className={'scale-90 hover:scale-100 ease-in-out duration-300'}
                     onMouseEnter={() => {
-                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-1.webp?alt=media&token=d55c925b-cae0-4c4d-81c3-e9f53d09ffa3')
+                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/RIXPV-Exterior-1.webp?alt=media&token=50d0f899-2da7-487d-9259-498a01bc6a5a')
                     }}
                     onMouseLeave={() => {
                         setPreviewImageUrl(null);
@@ -61,7 +61,7 @@ export default function Page2({}: Page2Props) {
                     }}
                     className={'scale-90 hover:scale-100 ease-in-out duration-300'}
                     onMouseEnter={() => {
-                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-3.webp?alt=media&token=5f291223-3287-4e50-8948-75e8ff231e9a')
+                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-exterior-1.webp?alt=media&token=27dff4cd-5260-4027-b940-f65c86fded2e')
                     }}
                     onMouseLeave={() => {
                         setPreviewImageUrl(null);
@@ -89,7 +89,7 @@ export default function Page2({}: Page2Props) {
                     }}
                     className={'scale-90 hover:scale-100 ease-in-out duration-300'}
                     onMouseEnter={() => {
-                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-town-Lobby-and-Bar.webp?alt=media&token=5773f269-8bc6-4c37-b6bd-04aff10fcfb2')
+                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/exterior-Radisson-Old-Town.webp?alt=media&token=b3955c8c-7637-4a6e-b50b-b8002a123b8b')
                     }}
                     onMouseLeave={() => {
                         setPreviewImageUrl(null);
@@ -116,7 +116,7 @@ export default function Page2({}: Page2Props) {
                     }}
                     className={'scale-90 hover:scale-100 ease-in-out duration-300'}
                     onMouseEnter={() => {
-                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/ridzene-blu-interior-3.webp?alt=media&token=1498ad32-8230-410a-a30c-636a5a420287')
+                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/ridzene-blu-exterior-1.webp?alt=media&token=a9e8fdfb-e2eb-41e0-96d8-b11a56753923')
                     }}
                     onMouseLeave={() => {
                         setPreviewImageUrl(null);
@@ -143,7 +143,7 @@ export default function Page2({}: Page2Props) {
                     }}
                     className={'scale-90 hover:scale-100 ease-in-out duration-300'}
                     onMouseEnter={() => {
-                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/parkInn_Barona_One-Bedroom-Apartment-Bedroom-3.webp?alt=media&token=55983d36-ff01-4a35-872b-986b4f3971a8')
+                        setPreviewImageUrl('https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-exterior-1.webp?alt=media&token=e940e864-10aa-450e-9d7b-fab9f7e71a8a')
                     }}
                     onMouseLeave={() => {
                         setPreviewImageUrl(null);

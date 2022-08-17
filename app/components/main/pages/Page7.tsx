@@ -1,4 +1,5 @@
 import {filterColors} from "~/constants/colors";
+import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 
 interface Page7Props {
     isHome: boolean
@@ -111,17 +112,17 @@ export default function Page7({isHome}: Page7Props) {
                     width: '40%',
                 }}
             >
-                <div
-                    style={{
-                        height: '50%',
-                        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/ridzene-blu-interior-2.webp?alt=media&token=49da21df-83e9-465d-bd97-49f43d0253a1")',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        borderWidth: '10px 10px 5px 10px',
-                        borderColor: 'white'
-                    }}
-                >
-                </div>
+                <ImageCarouselParent
+                    width={'100%'}
+                    height={'50%'}
+                    borderWidth={'10px 10px 5px 10px'}
+                    urlList={[
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/ridzene-blu-interior-2.webp?alt=media&token=49da21df-83e9-465d-bd97-49f43d0253a1',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/ridzene-blu-interior-1.webp?alt=media&token=8fe55e37-8899-4cbd-82f8-b243b2c681da',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/ridzene-blu-interior-2.webp?alt=media&token=49da21df-83e9-465d-bd97-49f43d0253a1',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/ridzene-blu-interior-4.webp?alt=media&token=45b67481-1c51-4e43-886e-a12da3a2f1c2'
+                    ]}
+                />
                 <div
                     style={{
                         height: '50%',
