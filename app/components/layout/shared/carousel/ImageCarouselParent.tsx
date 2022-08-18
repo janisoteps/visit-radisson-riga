@@ -19,11 +19,7 @@ export default function ImageCarouselParent(
     useEffect(() => {
         if (imageCarouselRef.current) {
             const newCarouselDims = imageCarouselRef.current.getBoundingClientRect();
-            if (newCarouselDims.width < 600) {
-                setCarouselWidth(newCarouselDims.width);
-            } else {
-                setCarouselWidth(600);
-            }
+            setCarouselWidth(newCarouselDims.width);
         }
     }, [isCurrent]);
 
