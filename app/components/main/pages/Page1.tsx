@@ -16,29 +16,29 @@ export default function Page1({}: Page1Props) {
             <VerticalCenterContainer>
                 <div
                     style={{
-                        width: '70vw',
+                        width: '80vw',
                         margin: '0 auto'
                     }}
                 >
                     <div
                         style={{
-                            fontSize: '6vw',
+                            fontSize: '5.5vw',
                             color: 'white',
                             fontWeight: 700
                         }}
                         className={'entrance-fade-move'}
                     >
-                        Main Slogan Phrase
+                        Astor Cluster Hotel portfolio
                     </div>
                     <div
                         style={{
-                            fontSize: '2.5vw',
+                            fontSize: '2.2vw',
                             color: 'white',
                             fontWeight: 400
                         }}
                         className={'entrance-fade-move'}
                     >
-                        A nice sounding blurb that represents us well
+                        5 location in Riga, 3 different hotel brands
                     </div>
                 </div>
             </VerticalCenterContainer>
