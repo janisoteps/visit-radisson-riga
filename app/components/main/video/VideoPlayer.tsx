@@ -12,16 +12,15 @@ export default function VideoPlayer({}: VideoPlayerProps) {
         >
             <div className={'vimeo-container'}>
                 <iframe
-                    src="https://player.vimeo.com/video/738517231?h=2a4bd6e0b8&badge=0&autopause=0&autoplay=1&player_id=0&app_id=58479&background=1"
+                    src="https://player.vimeo.com/video/742585789?h=e1e05b1d98&badge=0&autopause=0&autoplay=1&player_id=0&app_id=58479&background=1"
                     frameBorder="0"
                     allow="autoplay"
                     allowFullScreen
                     className={'vimeo-iframe'}
-                    title="radisson-riga-1.mp4"
+                    title="Astor Cluster Hotel portfolio"
                 >
                 </iframe>
             </div>
-            {/*<script src="https://player.vimeo.com/api/player.js"></script>*/}
         </div>
     )
 }
