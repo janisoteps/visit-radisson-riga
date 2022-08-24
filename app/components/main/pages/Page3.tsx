@@ -37,7 +37,7 @@ export default function Page3({}: Page3Props) {
                                 height: '100%',
                                 display: 'flex',
                                 justifyContent: 'center',
-                                backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/video-cover-1.webp?alt=media&token=5699d56f-b9a3-42dd-9214-a0cae16d36c1")',
+                                backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/video-cover-2.webp?alt=media&token=953bc859-56f2-4c32-b50b-f60f0516bb03")',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}
