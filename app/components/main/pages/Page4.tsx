@@ -21,9 +21,9 @@ export default function Page4({isHome}: Page4Props) {
         >
             <div
                 style={{
+                    position: 'relative',
                     width: '55%',
                     minHeight: '100%',
-                    height: isHome ? '100%' : 'fit-content',
                     paddingBottom: '100px'
                 }}
             >
@@ -43,26 +43,8 @@ export default function Page4({isHome}: Page4Props) {
                             margin: '0 auto'
                         }}
                         alt={'Radisson Old Town Riga Logo'}
-                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-logo-1.png?alt=media&token=0d595b34-cdfc-4016-b9a0-31ba95cdb5f2'}
+                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-logo-2.png?alt=media&token=de40e02b-018f-4b18-89c8-f874159507b1'}
                     />
-                    <div
-                        style={{
-                            fontSize: '3.5vw',
-                            fontWeight: 400,
-                            color: 'white',
-                        }}
-                    >
-                        Radisson Hotel Old Town Riga
-                    </div>
-                    <div
-                        style={{
-                            fontSize: '2vw',
-                            fontWeight: 400,
-                            color: 'white'
-                        }}
-                    >
-                        Simply Delightful
-                    </div>
 
                     <div
                         style={{
@@ -114,6 +96,21 @@ export default function Page4({isHome}: Page4Props) {
                             </li>
                         </ul>
                     </div>
+
+                </div>
+
+                <div
+                    style={{
+                        fontSize: '1.5vw',
+                        fontWeight: 400,
+                        color: 'white',
+                        width: '100%',
+                        textAlign: 'center',
+                        position: 'absolute',
+                        bottom: '20px'
+                    }}
+                >
+                    Simply Delightful
                 </div>
             </div>
 
@@ -129,7 +126,10 @@ export default function Page4({isHome}: Page4Props) {
                     borderWidth={'10px 5px 10px 10px'}
                     urlList={[
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/exterior-Radisson-Old-Town.webp?alt=media&token=b3955c8c-7637-4a6e-b50b-b8002a123b8b',
-                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-Town-Standard-Room-Park-View-King-4.webp?alt=media&token=0c259449-f6f0-4942-88a2-4a812b3213b1'
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-Town-Standard-Room-Park-View-King-4.webp?alt=media&token=0c259449-f6f0-4942-88a2-4a812b3213b1',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-interior-1.webp?alt=media&token=1ef6f34d-73dc-42cc-8efe-d4410b39ccdc',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-interior-2.webp?alt=media&token=9ac4b69b-e143-4c4e-aef2-3c395eba72b4',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-interior-3.webp?alt=media&token=7202894e-ee34-43ad-9267-fc5d70f5e672'
                     ]}
                 />
 

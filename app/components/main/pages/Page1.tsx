@@ -28,7 +28,7 @@ export default function Page1({}: Page1Props) {
                         }}
                         className={'entrance-fade-move'}
                     >
-                        Astor Cluster Hotel portfolio
+                        Radisson Hotel Group Riga
                     </div>
                     <div
                         style={{
