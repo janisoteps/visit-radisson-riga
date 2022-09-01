@@ -63,6 +63,7 @@ export default function Page1({}: Page1Props) {
                 >
                     Every Moment Matters
                 </div>
+                <div className={'bg-blue-900 bg-blue-800'}></div>
             </div>
         </div>
     )

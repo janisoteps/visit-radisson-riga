@@ -805,7 +805,7 @@ body {
 
 .hover\:bg-radisson2:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(82 150 165 / var(--tw-bg-opacity));
+  background-color: rgb(75 138 151 / var(--tw-bg-opacity));
 }
 
 .focus\:outline-none:focus {

@@ -13,7 +13,7 @@ export default function RadissonBluDaugava() {
                         left: 0,
                         width: '100vw',
                         height: '100vh',
-                        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-exterior-1.webp?alt=media&token=e940e864-10aa-450e-9d7b-fab9f7e71a8a")',
+                        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-exterior-1.webp?alt=media&token=27dff4cd-5260-4027-b940-f65c86fded2e")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         zIndex: 0

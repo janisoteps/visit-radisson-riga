@@ -1,5 +1,6 @@
 import {filterColors} from "~/constants/colors";
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
+import BookNowButtonRadisson from "~/components/layout/shared/book/BookNowButtonRadisson";
 
 interface Page4Props {
     isHome: boolean
@@ -51,7 +52,6 @@ export default function Page4({isHome}: Page4Props) {
                             fontSize: '1.2vw',
                             fontWeight: 400,
                             color: 'white',
-                            marginTop: '3vw'
                         }}
                     >
                         Surrounded by centuries-old buildings, Radisson Hotel Old Town Riga invites you to stroll along picturesque cobblestone streets to nearby landmarks like the Freedom Monument.
@@ -77,13 +77,7 @@ export default function Page4({isHome}: Page4Props) {
                     >
                         <ul className="radisson-color-list">
                             <li>
-                                <a
-                                    href={'https://www.radissonhotels.com/en-us/hotels/radisson-riga'}
-                                    className={'text-sky-800 decoration-sky-800 text-decoration-line'}
-                                    target={'_blank'}
-                                >
-                                    60 rooms
-                                </a>
+                                60 rooms
                             </li>
                             <li>
                                 Gym
@@ -97,6 +91,11 @@ export default function Page4({isHome}: Page4Props) {
                         </ul>
                     </div>
 
+                    <BookNowButtonRadisson
+                        onClick={() => {
+                            window.location.href = 'https://www.radissonhotels.com/en-us/hotels/radisson-riga';
+                        }}
+                    />
                 </div>
 
                 <div

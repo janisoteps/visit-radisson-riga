@@ -1,9 +1,11 @@
 import {filterColors} from "~/constants/colors";
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
+import BookNowButtonBlu from "~/components/layout/shared/book/BookNowButtonBlu";
 
 interface Page8Props {
     isHome: boolean
 }
+
 
 export default function Page8({isHome}: Page8Props) {
 
@@ -31,6 +33,8 @@ export default function Page8({isHome}: Page8Props) {
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-1.webp?alt=media&token=994e7e2e-e351-419c-a1a3-8812fdb8909d',
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-2.webp?alt=media&token=10f291e6-8e6c-4184-a60f-9310d0510b8b',
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-4.webp?alt=media&token=6bf66ff3-9053-4eaa-a0aa-5cdd92a7e756',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-8.webp?alt=media&token=3e5d7b93-991d-4dcc-8a2a-af5be9dc594b',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-9.webp?alt=media&token=e0316e8b-a0ce-4f7e-80e5-e72ee307f27d'
                     ]}
                 />
 
@@ -51,7 +55,8 @@ export default function Page8({isHome}: Page8Props) {
                 style={{
                     width: '60%',
                     minHeight: '100%',
-                    height: isHome ? '100%' : 'fit-content',
+                    position: 'relative'
+                    // height: isHome ? '100%' : 'fit-content',
                 }}
             >
                 <div
@@ -66,7 +71,7 @@ export default function Page8({isHome}: Page8Props) {
                             width: '100%',
                             height: 'auto'
                         }}
-                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-logo-1.webp?alt=media&token=5f361c2e-cad7-43b0-a545-9e6db5519ced'}
+                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-logo-2.png?alt=media&token=4d47e7c3-7b57-417d-a499-8c9a0bd68090'}
                     />
                 </div>
 
@@ -77,18 +82,6 @@ export default function Page8({isHome}: Page8Props) {
                         width: '100%'
                     }}
                 >
-                    <div
-                        style={{
-                            fontSize: '2vw',
-                            fontWeight: 600,
-                            margin: '0.2vw auto',
-                            color: 'white',
-                            width: 'fit-content',
-                            marginBottom: '2vw'
-                        }}
-                    >
-                        Memorable moments
-                    </div>
                     <div
                         style={{
                             fontSize: '1.4vw',
@@ -112,13 +105,7 @@ export default function Page8({isHome}: Page8Props) {
                             }}
                         >
                             <li>
-                                <a
-                                    href={'https://www.radissonhotels.com/en-us/hotels/radisson-blu-riga-daugava'}
-                                    className={'text-sky-500 decoration-sky-500 text-decoration-line'}
-                                    target={'_blank'}
-                                >
-                                    354 rooms and suites
-                                </a>
+                                354 rooms and suites
                             </li>
                             <li>
                                 10 meeting rooms and an Observation Deck
@@ -129,17 +116,28 @@ export default function Page8({isHome}: Page8Props) {
                             <li>
                                 On-site secured parking
                             </li>
-                            <li>
-                                <a
-                                    href={'https://www.radissonhotels.com/en-us/hotels/radisson-blu-riga-daugava'}
-                                    className={'text-sky-500 decoration-sky-500 text-decoration-line'}
-                                    target={'_blank'}
-                                >
-                                    Learn more
-                                </a>
-                            </li>
                         </ul>
+
+                        <BookNowButtonBlu
+                            onClick={() => {
+                                window.location.href = 'https://www.radissonhotels.com/en-us/hotels/radisson-blu-riga-daugava';
+                            }}
+                        />
                     </div>
+                </div>
+
+                <div
+                    style={{
+                        fontSize: '1.5vw',
+                        fontWeight: 400,
+                        color: 'white',
+                        width: '100%',
+                        textAlign: 'center',
+                        position: 'absolute',
+                        bottom: '20px'
+                    }}
+                >
+                    Feel the difference
                 </div>
             </div>
         </div>

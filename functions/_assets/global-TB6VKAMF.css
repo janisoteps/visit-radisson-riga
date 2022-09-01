@@ -795,17 +795,17 @@ body {
 
 .hover\:bg-blu2:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(1 72 151 / var(--tw-bg-opacity));
+  background-color: rgb(4 56 114 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-parkinn2:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(1 54 116 / var(--tw-bg-opacity));
+  background-color: rgb(1 70 149 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-radisson2:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(82 150 165 / var(--tw-bg-opacity));
+  background-color: rgb(68 127 139 / var(--tw-bg-opacity));
 }
 
 .focus\:outline-none:focus {
