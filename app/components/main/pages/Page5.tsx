@@ -1,4 +1,5 @@
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
+import BookNowButtonParkInn from "~/components/layout/shared/book/BookNowButtonParkInn";
 
 interface Page5Props {
     isHome: boolean
@@ -21,7 +22,7 @@ export default function Page5({isHome}: Page5Props) {
                     width: '60%',
                     paddingTop: '3vw',
                     minHeight: '100%',
-                    height: isHome ? '100%' : 'fit-content',
+                    position: 'relative'
                 }}
             >
                 <div
@@ -49,17 +50,6 @@ export default function Page5({isHome}: Page5Props) {
                 >
                     <div
                         style={{
-                            fontSize: '2vw',
-                            fontWeight: 600,
-                            margin: '0.2vw auto',
-                            color: 'white',
-                            width: 'fit-content'
-                        }}
-                    >
-                        feel good
-                    </div>
-                    <div
-                        style={{
                             fontSize: '1.4vw',
                             fontWeight: 300,
                             margin: '0.5vw auto',
@@ -81,13 +71,7 @@ export default function Page5({isHome}: Page5Props) {
                             }}
                         >
                             <li>
-                                <a
-                                    href={'https://www.radissonhotels.com/en-us/hotels/park-inn-riga-valdemara'}
-                                    className={'text-sky-500 decoration-sky-500 text-decoration-line'}
-                                    target={'_blank'}
-                                >
-                                    178 rooms
-                                </a>
+                                178 rooms
                             </li>
                             <li>
                                 Ballroom that spans 305 square meters and can be divided into 3 separate meeting rooms for added flexibility, 2 break-out rooms
@@ -103,6 +87,26 @@ export default function Page5({isHome}: Page5Props) {
                             </li>
                         </ul>
                     </div>
+
+                    <BookNowButtonParkInn
+                        onClick={() => {
+                            window.location.href = 'https://www.radissonhotels.com/en-us/hotels/park-inn-riga-valdemara';
+                        }}
+                    />
+                </div>
+
+                <div
+                    style={{
+                        fontSize: '1.5vw',
+                        fontWeight: 400,
+                        color: 'white',
+                        width: '100%',
+                        textAlign: 'center',
+                        position: 'absolute',
+                        bottom: '20px'
+                    }}
+                >
+                    feel good
                 </div>
             </div>
 
@@ -118,8 +122,11 @@ export default function Page5({isHome}: Page5Props) {
                     urlList={[
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/RIXPV-Exterior-1.webp?alt=media&token=50d0f899-2da7-487d-9259-498a01bc6a5a',
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-2.webp?alt=media&token=d6f6be2a-51a1-4aa5-b317-b0ce5a20d97c',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-8.webp?alt=media&token=6d2f775d-94d9-4e73-98a7-c4fb79fcfdfc',
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-3.webp?alt=media&token=376811b5-d22d-45a5-b4f9-7bd1981e12e1',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-7.webp?alt=media&token=90654d28-7697-430b-ae08-6d29451a90f5',
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-4.webp?alt=media&token=a8eb8854-55d1-4c04-bb50-dcc9f9609006',
+                        'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-9.webp?alt=media&token=e89273d9-c5ac-4041-9498-bad53d6c4266',
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-5.webp?alt=media&token=4e11f3d2-a26f-4db6-ab12-ab7a0fc7211b'
                     ]}
                 />
