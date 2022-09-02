@@ -9,7 +9,7 @@ interface BookNowButtonProps {
 export default function BookNowButtonRadisson(
     {
         onClick,
-        title = 'book now',
+        title = 'learn more',
         margin = '20px 0 0 0',
     }: BookNowButtonProps
 ) {
