@@ -90,9 +90,7 @@ export default function Page7({isHome}: Page7Props) {
                         </ul>
 
                         <BookNowButtonBlu
-                            onClick={() => {
-                                window.location.href = 'https://www.radissonhotels.com/en-us/hotels/radisson-blu-riga-ridzene';
-                            }}
+                            linkUrl={'https://www.radissonhotels.com/en-us/hotels/radisson-blu-riga-ridzene'}
                         />
                     </div>
                 </div>

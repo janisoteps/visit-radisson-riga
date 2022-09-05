@@ -92,9 +92,7 @@ export default function Page4({isHome}: Page4Props) {
                     </div>
 
                     <BookNowButtonRadisson
-                        onClick={() => {
-                            window.location.href = 'https://www.radissonhotels.com/en-us/hotels/radisson-riga';
-                        }}
+                        linkUrl={'https://www.radissonhotels.com/en-us/hotels/radisson-riga'}
                     />
                 </div>
 
