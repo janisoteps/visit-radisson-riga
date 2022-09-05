@@ -1,57 +1,62 @@
 import VerticalCenterContainer from "~/components/layout/shared/VerticalCenterContainer";
 
 interface BookNowButtonProps {
-    onClick: () => void,
+    linkUrl: string,
     title?: string,
     margin?: string,
 }
 
 export default function BookNowButtonRadisson(
     {
-        onClick,
+        linkUrl,
         title = 'learn more',
         margin = '20px 0 0 0',
     }: BookNowButtonProps
 ) {
 
     return (
-        <button
-            onClick={() => {onClick()}}
-            className={'bg-radisson1 hover:bg-radisson2  py-0 px-4 rounded-full inline-flex items-center shadow'}
-            style={{
-                margin: margin
-            }}
+        <a
+            href={linkUrl}
+            target={'_blank'}
+            rel="noreferrer"
         >
-            <div
+            <button
+                className={'bg-radisson1 hover:bg-radisson2  py-0 px-4 rounded-full inline-flex items-center shadow'}
                 style={{
-                    display: 'flex',
-                    height: '50px'
+                    margin: margin
                 }}
             >
-                <VerticalCenterContainer>
-                    <img
-                        style={{
-                            height: '70%',
-                            width: 'auto',
-                            filter: 'invert(1)',
-                            marginRight: '15px',
-                        }}
-                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/bed.png?alt=media&token=d817e800-3f0e-4905-958d-e99a78ce3129'}
-                        alt={'Book now'}
-                    />
-                </VerticalCenterContainer>
-                <VerticalCenterContainer>
-                    <div
-                        style={{
-                            color: 'white',
-                            fontWeight: 400,
-                            fontSize: '1.3rem'
-                        }}
-                    >
-                        {title}
-                    </div>
-                </VerticalCenterContainer>
-            </div>
-        </button>
+                <div
+                    style={{
+                        display: 'flex',
+                        height: '50px'
+                    }}
+                >
+                    <VerticalCenterContainer>
+                        <img
+                            style={{
+                                height: '70%',
+                                width: 'auto',
+                                filter: 'invert(1)',
+                                marginRight: '15px',
+                            }}
+                            src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/bed.png?alt=media&token=d817e800-3f0e-4905-958d-e99a78ce3129'}
+                            alt={'Book now'}
+                        />
+                    </VerticalCenterContainer>
+                    <VerticalCenterContainer>
+                        <div
+                            style={{
+                                color: 'white',
+                                fontWeight: 400,
+                                fontSize: '1.3rem'
+                            }}
+                        >
+                            {title}
+                        </div>
+                    </VerticalCenterContainer>
+                </div>
+            </button>
+        </a>
     )
 }

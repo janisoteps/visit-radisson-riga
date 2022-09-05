@@ -119,9 +119,7 @@ export default function Page8({isHome}: Page8Props) {
                         </ul>
 
                         <BookNowButtonBlu
-                            onClick={() => {
-                                window.location.href = 'https://www.radissonhotels.com/en-us/hotels/radisson-blu-riga-daugava';
-                            }}
+                            linkUrl={'https://www.radissonhotels.com/en-us/hotels/radisson-blu-riga-daugava'}
                         />
                     </div>
                 </div>

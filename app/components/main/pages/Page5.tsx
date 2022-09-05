@@ -89,9 +89,7 @@ export default function Page5({isHome}: Page5Props) {
                     </div>
 
                     <BookNowButtonParkInn
-                        onClick={() => {
-                            window.location.href = 'https://www.radissonhotels.com/en-us/hotels/park-inn-riga-valdemara';
-                        }}
+                        linkUrl={'https://www.radissonhotels.com/en-us/hotels/park-inn-riga-valdemara'}
                     />
                 </div>
 

@@ -115,9 +115,7 @@ export default function Page6({isHome}: Page6props) {
                         </ul>
 
                         <BookNowButtonParkInn
-                            onClick={() => {
-                                window.location.href = 'https://www.radissonhotels.com/en-us/hotels/park-inn-riga-barona';
-                            }}
+                            linkUrl={'https://www.radissonhotels.com/en-us/hotels/park-inn-riga-barona'}
                         />
                     </div>
                 </div>
