@@ -100,11 +100,11 @@ export default function Page4({isHome}: Page4Props) {
                     style={{
                         fontSize: '1.5vw',
                         fontWeight: 400,
-                        color: 'white',
+                        color: '#ffc91d',
                         width: '100%',
                         textAlign: 'center',
                         position: 'absolute',
-                        bottom: '20px'
+                        bottom: '20px',
                     }}
                 >
                     Simply Delightful
