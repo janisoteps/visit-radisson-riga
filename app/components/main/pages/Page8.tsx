@@ -128,7 +128,7 @@ export default function Page8({isHome}: Page8Props) {
                     style={{
                         fontSize: '1.5vw',
                         fontWeight: 400,
-                        color: 'white',
+                        color: '#ffc91d',
                         width: '100%',
                         textAlign: 'center',
                         position: 'absolute',
