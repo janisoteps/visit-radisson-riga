@@ -41,10 +41,10 @@ export default function Page4({isHome}: Page4Props) {
                         style={{
                             width: '20vw',
                             height: 'auto',
-                            margin: '0 auto'
+                            margin: '10px auto'
                         }}
                         alt={'Radisson Old Town Riga Logo'}
-                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-logo-2.png?alt=media&token=de40e02b-018f-4b18-89c8-f874159507b1'}
+                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-logo-3.png?alt=media&token=6f8ce431-b189-4605-859d-445f1a0b1181'}
                     />
 
                     <div
