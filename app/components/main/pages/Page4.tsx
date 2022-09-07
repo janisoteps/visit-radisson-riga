@@ -49,8 +49,8 @@ export default function Page4({isHome}: Page4Props) {
 
                     <div
                         style={{
-                            fontSize: '1.2vw',
-                            fontWeight: 400,
+                            fontSize: '1.4vw',
+                            fontWeight: 300,
                             color: 'white',
                         }}
                     >
@@ -58,8 +58,8 @@ export default function Page4({isHome}: Page4Props) {
                     </div>
                     <div
                         style={{
-                            fontSize: '1.2vw',
-                            fontWeight: 400,
+                            fontSize: '1.4vw',
+                            fontWeight: 300,
                             color: 'white',
                             marginTop: '1.5vw'
                         }}
@@ -68,8 +68,8 @@ export default function Page4({isHome}: Page4Props) {
                     </div>
                     <div
                         style={{
-                            fontSize: '1.2vw',
-                            fontWeight: 400,
+                            fontSize: '1.4vw',
+                            fontWeight: 300,
                             color: 'white',
                             marginTop: '1.5vw',
                             paddingLeft: '2vw'
