@@ -5,6 +5,48 @@ body {
 }
 @tailwind utilities;
 
+@font-face {
+    font-family: "Gill Sans";
+    font-weight: 300;
+    src: url("https://qrunch-fonts.s3.eu-central-1.amazonaws.com/Gill-Sans.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Gill Sans";
+    font-weight: 200;
+    src: url("https://qrunch-fonts.s3.eu-central-1.amazonaws.com/Gill-Sans-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Gill Sans";
+    font-weight: 400;
+    src: url("https://qrunch-fonts.s3.eu-central-1.amazonaws.com/Gill-Sans-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Gill Sans";
+    font-weight: 500;
+    src: url("https://qrunch-fonts.s3.eu-central-1.amazonaws.com/Gill-Sans-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Gotham Light";
+    font-weight: 300;
+    src: url("https://qrunch-fonts.s3.eu-central-1.amazonaws.com/Gotham-Light-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Sofia Pro";
+    font-weight: 300;
+    src: url("https://qrunch-fonts.s3.eu-central-1.amazonaws.com/sofiapro-light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    font-weight: 300;
+    src: url("https://qrunch-fonts.s3.eu-central-1.amazonaws.com/EBGaramond-Regular.ttf") format("truetype");
+}
+
 .play-button {
     box-sizing: border-box;
     height: 174px;
