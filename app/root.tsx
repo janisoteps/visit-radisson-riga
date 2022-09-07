@@ -18,7 +18,8 @@ export const meta: MetaFunction = () => ({
 export function links() {
     return [
         { rel: "stylesheet", href: styles },
-        { rel: 'script', href: 'https://player.vimeo.com/api/player.js'}
+        { rel: 'script', href: 'https://player.vimeo.com/api/player.js'},
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400&display=swap' }
     ];
 }
 

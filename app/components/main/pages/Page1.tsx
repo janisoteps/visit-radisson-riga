@@ -17,7 +17,8 @@ export default function Page1({}: Page1Props) {
                 <div
                     style={{
                         width: '80vw',
-                        margin: '0 auto'
+                        margin: '0 auto',
+                        fontFamily: 'Arial'
                     }}
                 >
                     <div
@@ -34,7 +35,8 @@ export default function Page1({}: Page1Props) {
                         style={{
                             fontSize: '2.2vw',
                             color: 'white',
-                            fontWeight: 400
+                            fontWeight: 400,
+                            paddingLeft: '5px'
                         }}
                         className={'entrance-fade-move'}
                     >
@@ -47,21 +49,37 @@ export default function Page1({}: Page1Props) {
                 style={{
                     width: '100%',
                     position: 'absolute',
-                    bottom: '20px',
+                    bottom: '40px',
                 }}
             >
                 <div
                     style={{
-                        width: '300px',
+                        fontFamily: 'Montserrat',
+                        width: '400px',
                         textAlign: 'center',
-                        fontSize: '1.2vw',
+                        fontSize: '1.9vw',
                         color: 'white',
-                        fontWeight: 300,
+                        fontWeight: 400,
                         margin: '0 auto',
-                        fontStyle: 'italic'
+                        fontStyle: 'italic',
+                        display: 'flex'
                     }}
                 >
-                    Every Moment Matters
+                    <div>
+                        Every Moment Matters
+                    </div>
+                    <div
+                        style={{
+                            fontFamily: 'sans-serif',
+                            fontWeight: 300,
+                            fontSize: '0.3rem',
+                            fontStyle: 'normal',
+                            transform: 'translateY(7px)',
+                            paddingLeft: '1px'
+                        }}
+                    >
+                        TM
+                    </div>
                 </div>
                 <div className={'bg-blue-900 bg-blue-800'}></div>
             </div>

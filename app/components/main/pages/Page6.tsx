@@ -123,7 +123,7 @@ export default function Page6({isHome}: Page6props) {
                 <div
                     style={{
                         fontSize: '1.6vw',
-                        fontWeight: 500,
+                        fontWeight: 400,
                         color: '#f5b335',
                         width: '100%',
                         textAlign: 'center',
