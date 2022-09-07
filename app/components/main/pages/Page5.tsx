@@ -96,7 +96,7 @@ export default function Page5({isHome}: Page5Props) {
                 <div
                     style={{
                         fontSize: '1.6vw',
-                        fontWeight: 500,
+                        fontWeight: 400,
                         color: '#f5b335',
                         width: '100%',
                         textAlign: 'center',
