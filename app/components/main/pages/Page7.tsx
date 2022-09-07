@@ -24,7 +24,6 @@ export default function Page7({isHome}: Page7Props) {
                     width: '60%',
                     minHeight: '100%',
                     position: 'relative'
-                    // height: isHome ? '100%' : 'fit-content',
                 }}
             >
                 <div
@@ -97,16 +96,18 @@ export default function Page7({isHome}: Page7Props) {
 
                 <div
                     style={{
-                        fontSize: '1.5vw',
-                        fontWeight: 400,
-                        color: '#ffc91d',
+                        fontSize: '1.1vw',
+                        fontWeight: 300,
+                        color: '#FFCB00',
                         width: '100%',
                         textAlign: 'center',
                         position: 'absolute',
-                        bottom: '20px'
+                        bottom: '20px',
+                        fontFamily: 'EB Garamond',
+                        letterSpacing: '0.5rem'
                     }}
                 >
-                    Feel the difference
+                    FEEL THE DIFFERENCE
                 </div>
             </div>
 

@@ -99,15 +99,34 @@ export default function Page4({isHome}: Page4Props) {
                 <div
                     style={{
                         fontSize: '1.5vw',
+                        fontFamily: 'Gill Sans',
                         fontWeight: 400,
-                        color: '#ffc91d',
                         width: '100%',
                         textAlign: 'center',
                         position: 'absolute',
                         bottom: '20px',
+                        letterSpacing: '0.2rem'
                     }}
                 >
-                    Simply Delightful
+                    <span
+                        style={{
+                            color: '#559EAA',
+                            fontFamily: 'Gill Sans',
+                            fontWeight: 400,
+                        }}
+                    >
+                        SIMPLY
+                    </span>
+                    <span
+                        style={{
+                            color: '#3f4a4c',
+                            fontFamily: 'Gill Sans',
+                            fontWeight: 400,
+                            marginLeft: '5px'
+                        }}
+                    >
+                        DELIGHTFUL
+                    </span>
                 </div>
             </div>
 

@@ -95,16 +95,26 @@ export default function Page5({isHome}: Page5Props) {
 
                 <div
                     style={{
-                        fontSize: '1.5vw',
-                        fontWeight: 400,
+                        fontSize: '1.6vw',
+                        fontWeight: 500,
                         color: '#f5b335',
                         width: '100%',
                         textAlign: 'center',
                         position: 'absolute',
-                        bottom: '20px'
+                        bottom: '20px',
+                        fontFamily: 'Sofia Pro'
                     }}
                 >
-                    feel good
+                    <div>
+                        feel
+                    </div>
+                    <div
+                        style={{
+                            transform: 'translateY(-15px)'
+                        }}
+                    >
+                        good
+                    </div>
                 </div>
             </div>
 
