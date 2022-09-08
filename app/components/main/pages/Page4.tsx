@@ -98,36 +98,55 @@ export default function Page4({isHome}: Page4Props) {
 
                 <div
                     style={{
-                        fontSize: '1.5vw',
-                        fontFamily: 'Gill Sans',
-                        fontWeight: 400,
-                        width: '100%',
-                        textAlign: 'center',
                         position: 'absolute',
-                        bottom: '20px',
-                        letterSpacing: '0.2rem'
+                        bottom: '30px',
+                        width: '100%',
+                        display: 'flex',
+                        justifyContent: 'center'
                     }}
                 >
-                    <span
+                    <img
+                        src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/SIMPLY-WHITE%2BDUSK-02-small.png?alt=media&token=748b4d26-0eee-488e-a4af-f51c63c0541a'}
+                        alt={'Simply Delightful'}
                         style={{
-                            color: '#559EAA',
-                            fontFamily: 'Gill Sans',
-                            fontWeight: 400,
+                            width: '15vw',
+                            height: 'auto',
                         }}
-                    >
-                        SIMPLY
-                    </span>
-                    <span
-                        style={{
-                            color: '#3f4a4c',
-                            fontFamily: 'Gill Sans',
-                            fontWeight: 400,
-                            marginLeft: '5px'
-                        }}
-                    >
-                        DELIGHTFUL
-                    </span>
+                    />
                 </div>
+
+                {/*<div*/}
+                {/*    style={{*/}
+                {/*        fontSize: '1.5vw',*/}
+                {/*        fontFamily: 'Gill Sans',*/}
+                {/*        fontWeight: 400,*/}
+                {/*        width: '100%',*/}
+                {/*        textAlign: 'center',*/}
+                {/*        position: 'absolute',*/}
+                {/*        bottom: '20px',*/}
+                {/*        letterSpacing: '0.2rem'*/}
+                {/*    }}*/}
+                {/*>*/}
+                {/*    <span*/}
+                {/*        style={{*/}
+                {/*            color: '#559EAA',*/}
+                {/*            fontFamily: 'Gill Sans',*/}
+                {/*            fontWeight: 400,*/}
+                {/*        }}*/}
+                {/*    >*/}
+                {/*        SIMPLY*/}
+                {/*    </span>*/}
+                {/*    <span*/}
+                {/*        style={{*/}
+                {/*            color: '#3f4a4c',*/}
+                {/*            fontFamily: 'Gill Sans',*/}
+                {/*            fontWeight: 400,*/}
+                {/*            marginLeft: '5px'*/}
+                {/*        }}*/}
+                {/*    >*/}
+                {/*        DELIGHTFUL*/}
+                {/*    </span>*/}
+                {/*</div>*/}
             </div>
 
             <div

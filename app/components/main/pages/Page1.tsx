@@ -55,14 +55,15 @@ export default function Page1({}: Page1Props) {
                 <div
                     style={{
                         fontFamily: 'Montserrat',
-                        width: '400px',
+                        width: '500px',
                         textAlign: 'center',
-                        fontSize: '1.9vw',
+                        fontSize: '1.6vw',
                         color: 'white',
                         fontWeight: 400,
                         margin: '0 auto',
                         fontStyle: 'italic',
-                        display: 'flex'
+                        display: 'flex',
+                        justifyContent: 'center'
                     }}
                 >
                     <div>
