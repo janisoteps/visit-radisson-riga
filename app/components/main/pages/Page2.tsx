@@ -2,7 +2,7 @@ import {useState} from "react";
 import {Link} from "@remix-run/react";
 
 interface Page2Props {
-
+    isMobile: boolean
 }
 
 export default function Page2({}: Page2Props) {

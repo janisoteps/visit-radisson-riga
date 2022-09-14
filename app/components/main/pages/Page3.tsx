@@ -5,7 +5,7 @@ import PlayButton from "~/components/layout/shared/PlayButton";
 import CloseButton from "~/components/layout/shared/CloseButton";
 
 interface Page3Props {
-
+    isMobile: boolean
 }
 
 export default function Page3({}: Page3Props) {

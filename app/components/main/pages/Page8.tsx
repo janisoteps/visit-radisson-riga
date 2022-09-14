@@ -3,7 +3,8 @@ import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarous
 import BookNowButtonBlu from "~/components/layout/shared/book/BookNowButtonBlu";
 
 interface Page8Props {
-    isHome: boolean
+    isHome: boolean,
+    isMobile: boolean
 }
 
 
