@@ -9,40 +9,42 @@ import Page7 from "~/components/main/pages/Page7";
 import Page8 from "~/components/main/pages/Page8";
 import {pageStyles} from '~/components/main/pages/pageStyles';
 
-interface HomePageProps {}
+interface HomePageProps {
+    isMobile: boolean
+}
 
-export default function HomePage({}: HomePageProps) {
+export default function HomePage({isMobile}: HomePageProps) {
     const parallaxSlides: ISlideConfig[] = [
         {
-            content: <Page1 />,
+            content: <Page1 isMobile={isMobile} />,
             style: pageStyles.page1Style
         },
         {
-            content: <Page2 />,
+            content: <Page2 isMobile={isMobile} />,
             style: pageStyles.page2Style
         },
         {
-            content: <Page3 />,
+            content: <Page3 isMobile={isMobile} />,
             style: pageStyles.page3Style
         },
         {
-            content: <Page4 isHome={true} />,
+            content: <Page4 isHome={true} isMobile={isMobile} />,
             style: pageStyles.page4Style
         },
         {
-            content: <Page5 isHome={true} />,
+            content: <Page5 isHome={true} isMobile={isMobile} />,
             style: pageStyles.page5Style
         },
         {
-            content: <Page6 isHome={true} />,
+            content: <Page6 isHome={true} isMobile={isMobile} />,
             style: pageStyles.page6Style
         },
         {
-            content: <Page7 isHome={true} />,
+            content: <Page7 isHome={true} isMobile={isMobile} />,
             style: pageStyles.page7Style
         },
         {
-            content: <Page8 isHome={true} />,
+            content: <Page8 isHome={true} isMobile={isMobile} />,
             style: pageStyles.page8Style
         },
     ];

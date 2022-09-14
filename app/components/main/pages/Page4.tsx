@@ -3,7 +3,8 @@ import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarous
 import BookNowButtonRadisson from "~/components/layout/shared/book/BookNowButtonRadisson";
 
 interface Page4Props {
-    isHome: boolean
+    isHome: boolean,
+    isMobile: boolean
 }
 
 export default function Page4({isHome}: Page4Props) {

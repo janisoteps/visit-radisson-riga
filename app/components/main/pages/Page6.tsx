@@ -2,10 +2,11 @@ import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarous
 import BookNowButtonParkInn from "~/components/layout/shared/book/BookNowButtonParkInn";
 
 interface Page6props {
-    isHome: boolean
+    isHome: boolean,
+    isMobile: boolean
 }
 
-export default function Page6({isHome}: Page6props) {
+export default function Page6({isHome, isMobile}: Page6props) {
 
     return (
         <div

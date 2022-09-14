@@ -1,7 +1,7 @@
 import VerticalCenterContainer from "~/components/layout/shared/VerticalCenterContainer";
 
 interface Page1Props {
-
+    isMobile: boolean
 }
 
 export default function Page1({}: Page1Props) {

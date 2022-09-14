@@ -1,10 +1,24 @@
+import {json, LoaderFunction} from "@remix-run/cloudflare";
+import {useLoaderData} from "@remix-run/react";
 import Page5 from "~/components/main/pages/Page5";
 import HotelPageContainer from "~/components/layout/shared/HotelPageContainer";
 
+export const loader: LoaderFunction = async ({ request }) => {
+    const userAgent = request.headers.get("User-agent");
+    const isMobile = !!userAgent ? Boolean(userAgent.match(
+        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+    )) : false;
+
+    return json({
+        isMobile: isMobile
+    });
+};
+
 export default function ParkInnValdemara() {
+    const { isMobile } = useLoaderData();
 
     return (
-        <HotelPageContainer>
+        <HotelPageContainer isMobile={isMobile}>
             <div>
                 <div
                     style={{
@@ -30,7 +44,7 @@ export default function ParkInnValdemara() {
                         zIndex: 1
                     }}
                 >
-                    <Page5 isHome={false} />
+                    <Page5 isHome={false} isMobile={isMobile} />
                 </div>
             </div>
         </HotelPageContainer>
