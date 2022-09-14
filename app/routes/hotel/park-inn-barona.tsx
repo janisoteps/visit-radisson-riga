@@ -1,10 +1,24 @@
 import Page6 from "~/components/main/pages/Page6";
 import HotelPageContainer from "~/components/layout/shared/HotelPageContainer";
+import {json, LoaderFunction} from "@remix-run/cloudflare";
+import {useLoaderData} from "@remix-run/react";
+
+export const loader: LoaderFunction = async ({ request }) => {
+    const userAgent = request.headers.get("User-agent");
+    const isMobile = !!userAgent ? Boolean(userAgent.match(
+        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+    )) : false;
+
+    return json({
+        isMobile: isMobile
+    });
+};
 
 export default function ParkInnBarona() {
+    const { isMobile } = useLoaderData();
 
     return (
-        <HotelPageContainer>
+        <HotelPageContainer isMobile={isMobile}>
             <div>
                 <div
                     style={{
@@ -30,7 +44,7 @@ export default function ParkInnBarona() {
                         zIndex: 1
                     }}
                 >
-                    <Page6 isHome={false} />
+                    <Page6 isHome={false} isMobile={isMobile} />
                 </div>
             </div>
         </HotelPageContainer>
