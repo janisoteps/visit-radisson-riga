@@ -26,7 +26,7 @@ export default function Page5({isHome, isMobile}: Page5Props) {
                         paddingTop: '3vw',
                         minHeight: '100%',
                         position: 'relative',
-                        paddingBottom: '100px'
+                        paddingBottom: '170px'
                     }}
                 >
                     <div
@@ -65,7 +65,8 @@ export default function Page5({isHome, isMobile}: Page5Props) {
                                     marginBottom: '1vw'
                                 }}
                             >
-                                Located on the west bank of the Daugava River, close to the city center and many top attractions, the Park Inn Riga Valdemara is just a 12-minute drive from Riga International Airport (RIX) and is 2 public transport stops from the UNESCO Heritage-listed Old Town.
+                                the Park Inn Riga Valdemara is just a 12-minute drive from Riga International Airport (RIX) and is 2 public transport stops from
+                                the UNESCO Heritage-listed Old Town.
                             </div>
 
                             <ul
@@ -78,16 +79,16 @@ export default function Page5({isHome, isMobile}: Page5Props) {
                                     178 rooms
                                 </li>
                                 <li>
-                                    Ballroom that spans 305 square meters and can be divided into 3 separate meeting rooms for added flexibility, 2 break-out rooms
-                                </li>
-                                <li>
-                                    On-site Italian concept restaurant Bocca Buona
+                                    5 conference rooms (10 -300 persons)
                                 </li>
                                 <li>
                                     Gym
                                 </li>
                                 <li>
                                     Parking
+                                </li>
+                                <li>
+                                    Bocca Buona restaurant
                                 </li>
                             </ul>
                         </div>

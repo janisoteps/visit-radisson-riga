@@ -8,7 +8,7 @@ interface Page3Props {
     isMobile: boolean
 }
 
-export default function Page3({}: Page3Props) {
+export default function Page3({isMobile}: Page3Props) {
     const [videoOpen, setVideoOpen] = useState<boolean>(false);
 
     return (
@@ -22,8 +22,8 @@ export default function Page3({}: Page3Props) {
             <VerticalCenterContainer>
                 <div
                     style={{
-                        width: '80vw',
-                        height: '80vh',
+                        width: isMobile ? '95vw' : '80vw',
+                        height: isMobile ? '35vh' : '80vh',
                         margin: '0 auto',
                         position: 'relative'
                     }}
