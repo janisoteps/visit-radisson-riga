@@ -4,7 +4,7 @@ interface Page1Props {
     isMobile: boolean
 }
 
-export default function Page1({}: Page1Props) {
+export default function Page1({isMobile}: Page1Props) {
 
     return (
         <div
@@ -23,7 +23,7 @@ export default function Page1({}: Page1Props) {
                 >
                     <div
                         style={{
-                            fontSize: '5.5vw',
+                            fontSize: isMobile ? '10vw' : '5.5vw',
                             color: 'white',
                             fontWeight: 700
                         }}
@@ -33,10 +33,11 @@ export default function Page1({}: Page1Props) {
                     </div>
                     <div
                         style={{
-                            fontSize: '2.2vw',
+                            fontSize: isMobile ? '6vw' : '2.2vw',
                             color: 'white',
                             fontWeight: 400,
-                            paddingLeft: '5px'
+                            paddingLeft: '5px',
+                            marginTop: isMobile ? '10px' : ''
                         }}
                         className={'entrance-fade-move'}
                     >
@@ -55,9 +56,9 @@ export default function Page1({}: Page1Props) {
                 <div
                     style={{
                         fontFamily: 'Montserrat',
-                        width: '500px',
+                        width: '80vw',
                         textAlign: 'center',
-                        fontSize: '1.6vw',
+                        fontSize: isMobile ? '4vw' : '1.6vw',
                         color: 'white',
                         fontWeight: 400,
                         margin: '0 auto',
@@ -73,7 +74,7 @@ export default function Page1({}: Page1Props) {
                         style={{
                             fontFamily: 'sans-serif',
                             fontWeight: 300,
-                            fontSize: '0.3rem',
+                            fontSize: isMobile ? '1vw' : '0.3rem',
                             fontStyle: 'normal',
                             transform: 'translateY(7px)',
                             paddingLeft: '1px'
