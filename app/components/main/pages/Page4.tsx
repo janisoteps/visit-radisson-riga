@@ -112,26 +112,28 @@ export default function Page4({isHome, isMobile, slideDownByOneSlide}: Page4Prop
                     </div>
                 </div>
 
-                <div
-                    style={{
-                        width: '100%',
-                        display: 'flex',
-                        height: '70vh'
-                    }}
-                >
-                    <ImageCarouselParent
-                        width={'100%'}
-                        height={'100%'}
-                        borderWidth={'10px 5px 10px 10px'}
-                        urlList={[
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/exterior-Radisson-Old-Town.webp?alt=media&token=b3955c8c-7637-4a6e-b50b-b8002a123b8b',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-Town-Standard-Room-Park-View-King-4.webp?alt=media&token=0c259449-f6f0-4942-88a2-4a812b3213b1',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-interior-1.webp?alt=media&token=1ef6f34d-73dc-42cc-8efe-d4410b39ccdc',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-interior-2.webp?alt=media&token=9ac4b69b-e143-4c4e-aef2-3c395eba72b4',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-interior-3.webp?alt=media&token=7202894e-ee34-43ad-9267-fc5d70f5e672'
-                        ]}
-                    />
-                </div>
+                {!isHome && (
+                    <div
+                        style={{
+                            width: '100%',
+                            display: 'flex',
+                            height: '70vh'
+                        }}
+                    >
+                        <ImageCarouselParent
+                            width={'100%'}
+                            height={'100%'}
+                            borderWidth={'10px 5px 10px 10px'}
+                            urlList={[
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/exterior-Radisson-Old-Town.webp?alt=media&token=b3955c8c-7637-4a6e-b50b-b8002a123b8b',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/radisson-Old-Town-Standard-Room-Park-View-King-4.webp?alt=media&token=0c259449-f6f0-4942-88a2-4a812b3213b1',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-interior-1.webp?alt=media&token=1ef6f34d-73dc-42cc-8efe-d4410b39ccdc',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-interior-2.webp?alt=media&token=9ac4b69b-e143-4c4e-aef2-3c395eba72b4',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/old-town-interior-3.webp?alt=media&token=7202894e-ee34-43ad-9267-fc5d70f5e672'
+                            ]}
+                        />
+                    </div>
+                )}
 
                 {isHome && (
                     <ScrollDownButton slideDownByOneSlide={slideDownByOneSlide} />

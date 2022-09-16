@@ -1,14 +1,16 @@
 import {filterColors} from "~/constants/colors";
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import BookNowButtonBlu from "~/components/layout/shared/book/BookNowButtonBlu";
+import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page8Props {
     isHome: boolean,
-    isMobile: boolean
+    isMobile: boolean,
+    slideDownByOneSlide?: () => void
 }
 
 
-export default function Page8({isHome, isMobile}: Page8Props) {
+export default function Page8({isHome, isMobile, slideDownByOneSlide}: Page8Props) {
 
     if (isMobile) {
         return (
@@ -33,7 +35,7 @@ export default function Page8({isHome, isMobile}: Page8Props) {
                     <div
                         style={{
                             width: '70%',
-                            margin: '30px auto 0px auto'
+                            margin: '30px auto'
                         }}
                     >
                         <img
@@ -42,7 +44,7 @@ export default function Page8({isHome, isMobile}: Page8Props) {
                                 width: '100%',
                                 height: 'auto'
                             }}
-                            src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-logo-2.png?alt=media&token=4d47e7c3-7b57-417d-a499-8c9a0bd68090'}
+                            src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-logo-3.webp?alt=media&token=048be708-a69a-4dac-a048-6f2adf7580e3'}
                         />
                     </div>
 
@@ -114,26 +116,32 @@ export default function Page8({isHome, isMobile}: Page8Props) {
                     </div>
                 </div>
 
-                <div
-                    style={{
-                        width: '100%',
-                        height: '70vh'
-                    }}
-                >
-                    <ImageCarouselParent
-                        width={'100%'}
-                        height={'100%'}
-                        borderWidth={'10px 10px 5px 10px'}
-                        urlList={[
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-6.webp?alt=media&token=16d5062b-933f-48ce-a8a4-67cdc431986b',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-1.webp?alt=media&token=994e7e2e-e351-419c-a1a3-8812fdb8909d',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-2.webp?alt=media&token=10f291e6-8e6c-4184-a60f-9310d0510b8b',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-4.webp?alt=media&token=6bf66ff3-9053-4eaa-a0aa-5cdd92a7e756',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-8.webp?alt=media&token=3e5d7b93-991d-4dcc-8a2a-af5be9dc594b',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-9.webp?alt=media&token=e0316e8b-a0ce-4f7e-80e5-e72ee307f27d'
-                        ]}
-                    />
-                </div>
+                {!isHome && (
+                    <div
+                        style={{
+                            width: '100%',
+                            height: '70vh'
+                        }}
+                    >
+                        <ImageCarouselParent
+                            width={'100%'}
+                            height={'100%'}
+                            borderWidth={'10px 10px 5px 10px'}
+                            urlList={[
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-6.webp?alt=media&token=16d5062b-933f-48ce-a8a4-67cdc431986b',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-1.webp?alt=media&token=994e7e2e-e351-419c-a1a3-8812fdb8909d',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-2.webp?alt=media&token=10f291e6-8e6c-4184-a60f-9310d0510b8b',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-4.webp?alt=media&token=6bf66ff3-9053-4eaa-a0aa-5cdd92a7e756',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-8.webp?alt=media&token=3e5d7b93-991d-4dcc-8a2a-af5be9dc594b',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-interior-9.webp?alt=media&token=e0316e8b-a0ce-4f7e-80e5-e72ee307f27d'
+                            ]}
+                        />
+                    </div>
+                )}
+
+                {isHome && (
+                    <ScrollDownButton slideDownByOneSlide={slideDownByOneSlide} />
+                )}
             </div>
         )
     } else {
