@@ -2,7 +2,11 @@ import {filterColors} from "~/constants/colors";
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
-export default function Page4Gallery() {
+interface Page4GalleryProps {
+    slideDownByOneSlide?: () => void
+}
+
+export default function Page4Gallery({slideDownByOneSlide}: Page4GalleryProps) {
 
     return (
         <div
@@ -52,7 +56,7 @@ export default function Page4Gallery() {
                 />
             </div>
 
-            <ScrollDownButton />
+            <ScrollDownButton slideDownByOneSlide={slideDownByOneSlide} />
         </div>
     )
 }

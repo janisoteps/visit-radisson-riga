@@ -6,10 +6,11 @@ import CloseButton from "~/components/layout/shared/CloseButton";
 import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page3Props {
-    isMobile: boolean
+    isMobile: boolean,
+    slideDownByOneSlide?: () => void
 }
 
-export default function Page3({isMobile}: Page3Props) {
+export default function Page3({isMobile, slideDownByOneSlide}: Page3Props) {
     const [videoOpen, setVideoOpen] = useState<boolean>(false);
 
     return (
@@ -69,7 +70,7 @@ export default function Page3({isMobile}: Page3Props) {
                 </div>
             </VerticalCenterContainer>
             {isMobile && (
-                <ScrollDownButton />
+                <ScrollDownButton slideDownByOneSlide={slideDownByOneSlide} />
             )}
         </div>
     )

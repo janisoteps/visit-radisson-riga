@@ -8,12 +8,15 @@ import Page6 from "~/components/main/pages/Page6";
 import Page7 from "~/components/main/pages/Page7";
 import Page8 from "~/components/main/pages/Page8";
 import {pageStyles} from '~/components/main/pages/pageStyles';
+import {useState} from "react";
 
 interface HomePageProps {
     isMobile: boolean
 }
 
 export default function HomePage({isMobile}: HomePageProps) {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
     const parallaxSlides: ISlideConfig[] = [
         {
             content: <Page1 isMobile={isMobile} />,
@@ -59,11 +62,11 @@ export default function HomePage({isMobile}: HomePageProps) {
             style: pageStyles.page2StyleMobile
         },
         {
-            content: <Page3 isMobile={isMobile} />,
+            content: <Page3 isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style: pageStyles.page3StyleMobile
         },
         {
-            content: <Page4 isHome={true} isMobile={isMobile} />,
+            content: <Page4 isHome={true} isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style:  pageStyles.page4StyleMobile
         },
         // {
@@ -71,7 +74,7 @@ export default function HomePage({isMobile}: HomePageProps) {
         //     style:  pageStyles.page4StyleMobile
         // },
         {
-            content: <Page5 isHome={true} isMobile={isMobile} />,
+            content: <Page5 isHome={true} isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style: pageStyles.page5StyleMobile
         },
         // {
@@ -79,11 +82,11 @@ export default function HomePage({isMobile}: HomePageProps) {
         //     style:  pageStyles.page5StyleMobile
         // },
         {
-            content: <Page6 isHome={true} isMobile={isMobile} />,
+            content: <Page6 isHome={true} isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style: pageStyles.page6StyleMobile
         },
         {
-            content: <Page7 isHome={true} isMobile={isMobile} />,
+            content: <Page7 isHome={true} isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style: pageStyles.page7StyleMobile
         },
         {
@@ -91,6 +94,13 @@ export default function HomePage({isMobile}: HomePageProps) {
             style: pageStyles.page8StyleMobile
         },
     ];
+
+    function slideDownByOneSlide() {
+        const slideCount = isMobile ? parallaxSlidesMobile.length : parallaxSlides.length;
+        if (currentSlide < slideCount - 1) {
+            setCurrentSlide(currentSlide + 1);
+        }
+    }
 
     if (typeof window !== 'undefined' && !!window) {
         return (
@@ -101,6 +111,10 @@ export default function HomePage({isMobile}: HomePageProps) {
                 parallax={{
                     offset: 0.6,
                     type: SlideParallaxType.cover
+                }}
+                currentSlideIndex={currentSlide}
+                onChange={(newIdx) => {
+                    setCurrentSlide(newIdx)
                 }}
             />
         )

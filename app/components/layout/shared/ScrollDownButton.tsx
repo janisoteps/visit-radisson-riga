@@ -8,7 +8,6 @@ export default function ScrollDownButton({slideDownByOneSlide}: ScrollDownButton
         <div
             className={'scroll-button'}
             onClick={() => {
-                // window.scrollBy({top: window.innerHeight, left: 0, behavior: "smooth"});
                 if (!!slideDownByOneSlide) {
                     slideDownByOneSlide()
                 }

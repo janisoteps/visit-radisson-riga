@@ -1,7 +1,11 @@
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
-export default function Page5Gallery() {
+interface Page5GalleryProps {
+    slideDownByOneSlide?: () => void
+}
+
+export default function Page5Gallery({slideDownByOneSlide}: Page5GalleryProps) {
 
     return (
         <div
@@ -59,7 +63,7 @@ export default function Page5Gallery() {
                 />
             </div>
 
-            <ScrollDownButton />
+            <ScrollDownButton slideDownByOneSlide={slideDownByOneSlide} />
         </div>
     )
 }
