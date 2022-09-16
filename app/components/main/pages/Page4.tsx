@@ -1,6 +1,7 @@
 import {filterColors} from "~/constants/colors";
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import BookNowButtonRadisson from "~/components/layout/shared/book/BookNowButtonRadisson";
+import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page4Props {
     isHome: boolean,
@@ -86,6 +87,7 @@ export default function Page4({isHome, isMobile}: Page4Props) {
 
                         <BookNowButtonRadisson
                             linkUrl={'https://www.radissonhotels.com/en-us/hotels/radisson-riga'}
+                            isMobile={true}
                         />
                     </div>
 
@@ -129,6 +131,10 @@ export default function Page4({isHome, isMobile}: Page4Props) {
                         ]}
                     />
                 </div>
+
+                {isHome && (
+                    <ScrollDownButton />
+                )}
             </div>
         )
     } else {

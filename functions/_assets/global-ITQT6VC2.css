@@ -855,8 +855,8 @@ body {
   -webkit-animation: MoveUpDown 1s linear infinite;
           animation: MoveUpDown 1s linear infinite;
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: '10px';
+  bottom: '10px';
 }
 
 @-webkit-keyframes MoveUpDown {

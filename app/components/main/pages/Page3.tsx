@@ -3,6 +3,7 @@ import {useState} from "react";
 import VideoPlayer from "~/components/main/video/VideoPlayer";
 import PlayButton from "~/components/layout/shared/PlayButton";
 import CloseButton from "~/components/layout/shared/CloseButton";
+import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page3Props {
     isMobile: boolean
@@ -18,7 +19,6 @@ export default function Page3({isMobile}: Page3Props) {
                 height: '100vh'
             }}
         >
-
             <VerticalCenterContainer>
                 <div
                     style={{
@@ -68,6 +68,9 @@ export default function Page3({isMobile}: Page3Props) {
                     )}
                 </div>
             </VerticalCenterContainer>
+            {isMobile && (
+                <ScrollDownButton />
+            )}
         </div>
     )
 }

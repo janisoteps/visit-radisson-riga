@@ -8,6 +8,8 @@ import Page6 from "~/components/main/pages/Page6";
 import Page7 from "~/components/main/pages/Page7";
 import Page8 from "~/components/main/pages/Page8";
 import {pageStyles} from '~/components/main/pages/pageStyles';
+import Page4Gallery from "~/components/main/pages/Page4Gallery";
+import Page5Gallery from "~/components/main/pages/Page5Gallery";
 
 interface HomePageProps {
     isMobile: boolean
@@ -49,12 +51,55 @@ export default function HomePage({isMobile}: HomePageProps) {
         },
     ];
 
+    const parallaxSlidesMobile: ISlideConfig[] = [
+        {
+            content: <Page1 isMobile={isMobile} />,
+            style: pageStyles.page1StyleMobile
+        },
+        {
+            content: <Page2 isMobile={isMobile} />,
+            style: pageStyles.page2StyleMobile
+        },
+        {
+            content: <Page3 isMobile={isMobile} />,
+            style: pageStyles.page3StyleMobile
+        },
+        {
+            content: <Page4 isHome={true} isMobile={isMobile} />,
+            style:  pageStyles.page4StyleMobile
+        },
+        {
+            content: <Page4Gallery />,
+            style:  pageStyles.page4StyleMobile
+        },
+        {
+            content: <Page5 isHome={true} isMobile={isMobile} />,
+            style: pageStyles.page5StyleMobile
+        },
+        {
+            content: <Page5Gallery />,
+            style:  pageStyles.page5StyleMobile
+        },
+        {
+            content: <Page6 isHome={true} isMobile={isMobile} />,
+            style: pageStyles.page6StyleMobile
+        },
+        {
+            content: <Page7 isHome={true} isMobile={isMobile} />,
+            style: pageStyles.page7StyleMobile
+        },
+        {
+            content: <Page8 isHome={true} isMobile={isMobile} />,
+            style: pageStyles.page8StyleMobile
+        },
+    ];
+
     if (typeof window !== 'undefined' && !!window) {
         return (
             <PageSlides
                 enableAutoScroll={true}
                 transitionSpeed={1300}
-                slides={parallaxSlides}
+                slides={isMobile ? parallaxSlidesMobile : parallaxSlides}
                 parallax={{
                     offset: 0.6,
                     type: SlideParallaxType.cover

@@ -4,6 +4,7 @@ interface BookNowButtonProps {
     linkUrl: string,
     title?: string,
     margin?: string,
+    isMobile?: boolean
 }
 
 export default function BookNowButtonBlu(
@@ -11,6 +12,7 @@ export default function BookNowButtonBlu(
         linkUrl,
         title = 'learn more',
         margin = '20px 0 0 0',
+        isMobile = false
     }: BookNowButtonProps
 ) {
 
@@ -29,7 +31,7 @@ export default function BookNowButtonBlu(
                 <div
                     style={{
                         display: 'flex',
-                        height: '50px'
+                        height: isMobile ? '40px' : '50px'
                     }}
                 >
                     <VerticalCenterContainer>
@@ -49,7 +51,7 @@ export default function BookNowButtonBlu(
                             style={{
                                 color: 'white',
                                 fontWeight: 400,
-                                fontSize: '1.3rem'
+                                fontSize: isMobile ? '1rem' : '1.3rem'
                             }}
                         >
                             {title}

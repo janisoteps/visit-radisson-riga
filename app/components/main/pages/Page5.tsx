@@ -1,5 +1,6 @@
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import BookNowButtonParkInn from "~/components/layout/shared/book/BookNowButtonParkInn";
+import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page5Props {
     isHome: boolean,
@@ -31,8 +32,8 @@ export default function Page5({isHome, isMobile}: Page5Props) {
                 >
                     <div
                         style={{
-                            width: '50%',
-                            margin: '10px auto'
+                            width: '60%',
+                            margin: '30px auto'
                         }}
                     >
                         <img
@@ -95,6 +96,7 @@ export default function Page5({isHome, isMobile}: Page5Props) {
 
                         <BookNowButtonParkInn
                             linkUrl={'https://www.radissonhotels.com/en-us/hotels/park-inn-riga-valdemara'}
+                            isMobile={true}
                         />
                     </div>
 
@@ -157,6 +159,10 @@ export default function Page5({isHome, isMobile}: Page5Props) {
                     >
                     </div>
                 </div>
+
+                {isHome && (
+                    <ScrollDownButton />
+                )}
             </div>
         )
     } else {
