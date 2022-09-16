@@ -120,3 +120,19 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.scroll-button {
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
