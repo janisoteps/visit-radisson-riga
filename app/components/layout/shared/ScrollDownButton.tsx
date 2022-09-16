@@ -1,10 +1,17 @@
-export default function ScrollDownButton() {
+interface ScrollDownButtonProps {
+    slideDownByOneSlide?: () => void
+}
+
+export default function ScrollDownButton({slideDownByOneSlide}: ScrollDownButtonProps) {
 
     return (
         <div
             className={'scroll-button'}
             onClick={() => {
-                window.scrollBy({top: window.innerHeight, left: 0, behavior: "smooth"});
+                // window.scrollBy({top: window.innerHeight, left: 0, behavior: "smooth"});
+                if (!!slideDownByOneSlide) {
+                    slideDownByOneSlide()
+                }
             }}
         >
             <img
