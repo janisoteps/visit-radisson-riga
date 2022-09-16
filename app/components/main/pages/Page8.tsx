@@ -1,6 +1,7 @@
 import {filterColors} from "~/constants/colors";
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import BookNowButtonBlu from "~/components/layout/shared/book/BookNowButtonBlu";
+import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page8Props {
     isHome: boolean,
@@ -92,13 +93,14 @@ export default function Page8({isHome, isMobile}: Page8Props) {
 
                             <BookNowButtonBlu
                                 linkUrl={'https://www.radissonhotels.com/en-us/hotels/radisson-blu-riga-daugava'}
+                                isMobile={true}
                             />
                         </div>
                     </div>
 
                     <div
                         style={{
-                            fontSize: '3.9vw',
+                            fontSize: '3vw',
                             fontWeight: 300,
                             color: '#FFCB00',
                             width: '100%',

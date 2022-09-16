@@ -4,6 +4,7 @@ interface BookNowButtonProps {
     linkUrl: string,
     title?: string,
     margin?: string,
+    isMobile?: boolean
 }
 
 export default function BookNowButtonRadisson(
@@ -11,6 +12,7 @@ export default function BookNowButtonRadisson(
         linkUrl,
         title = 'learn more',
         margin = '20px 0 0 0',
+        isMobile = false
     }: BookNowButtonProps
 ) {
 
@@ -29,7 +31,7 @@ export default function BookNowButtonRadisson(
                 <div
                     style={{
                         display: 'flex',
-                        height: '50px'
+                        height: isMobile ? '40px' : '50px'
                     }}
                 >
                     <VerticalCenterContainer>
@@ -38,7 +40,7 @@ export default function BookNowButtonRadisson(
                                 height: '70%',
                                 width: 'auto',
                                 filter: 'invert(1)',
-                                marginRight: '15px',
+                                marginRight: isMobile ? '10px' : '15px',
                             }}
                             src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/bed.png?alt=media&token=d817e800-3f0e-4905-958d-e99a78ce3129'}
                             alt={'Book now'}
@@ -49,7 +51,7 @@ export default function BookNowButtonRadisson(
                             style={{
                                 color: 'white',
                                 fontWeight: 400,
-                                fontSize: '1.3rem'
+                                fontSize: isMobile ? '1rem' : '1.3rem'
                             }}
                         >
                             {title}

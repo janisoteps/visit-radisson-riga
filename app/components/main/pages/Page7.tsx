@@ -1,6 +1,7 @@
 import {filterColors} from "~/constants/colors";
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import BookNowButtonBlu from "~/components/layout/shared/book/BookNowButtonBlu";
+import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page7Props {
     isHome: boolean,
@@ -96,13 +97,14 @@ export default function Page7({isHome, isMobile}: Page7Props) {
 
                             <BookNowButtonBlu
                                 linkUrl={'https://www.radissonhotels.com/en-us/hotels/radisson-blu-riga-ridzene'}
+                                isMobile={true}
                             />
                         </div>
                     </div>
 
                     <div
                         style={{
-                            fontSize: '3.9vw',
+                            fontSize: '3vw',
                             fontWeight: 300,
                             color: '#FFCB00',
                             width: '100%',
@@ -139,6 +141,10 @@ export default function Page7({isHome, isMobile}: Page7Props) {
                         ]}
                     />
                 </div>
+
+                {isHome && (
+                    <ScrollDownButton />
+                )}
             </div>
         )
     } else {

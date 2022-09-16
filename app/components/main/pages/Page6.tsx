@@ -1,5 +1,6 @@
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import BookNowButtonParkInn from "~/components/layout/shared/book/BookNowButtonParkInn";
+import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page6props {
     isHome: boolean,
@@ -84,6 +85,7 @@ export default function Page6({isHome, isMobile}: Page6props) {
 
                             <BookNowButtonParkInn
                                 linkUrl={'https://www.radissonhotels.com/en-us/hotels/park-inn-riga-barona'}
+                                isMobile={true}
                             />
                         </div>
                     </div>
@@ -135,6 +137,10 @@ export default function Page6({isHome, isMobile}: Page6props) {
                         ]}
                     />
                 </div>
+
+                {isHome && (
+                    <ScrollDownButton />
+                )}
             </div>
         )
     } else {
