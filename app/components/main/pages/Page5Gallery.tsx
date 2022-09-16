@@ -1,5 +1,6 @@
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
+import BookNowButtonParkInn from "~/components/layout/shared/book/BookNowButtonParkInn";
 
 interface Page5GalleryProps {
     slideDownByOneSlide?: () => void
@@ -21,7 +22,7 @@ export default function Page5Gallery({slideDownByOneSlide}: Page5GalleryProps) {
             <div
                 style={{
                     width: '100%',
-                    height: '40vh'
+                    height: '35vh'
                 }}
             >
                 <div
@@ -43,13 +44,13 @@ export default function Page5Gallery({slideDownByOneSlide}: Page5GalleryProps) {
             <div
                 style={{
                     width: '100%',
-                    height: '60vh'
+                    height: '65vh'
                 }}
             >
                 <ImageCarouselParent
                     width={'100%'}
                     height={'100%'}
-                    borderWidth={'10px 10px 5px 10px'}
+                    borderWidth={'5px'}
                     urlList={[
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/RIXPV-Exterior-1.webp?alt=media&token=50d0f899-2da7-487d-9259-498a01bc6a5a',
                         'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-2.webp?alt=media&token=d6f6be2a-51a1-4aa5-b317-b0ce5a20d97c',
@@ -64,6 +65,20 @@ export default function Page5Gallery({slideDownByOneSlide}: Page5GalleryProps) {
             </div>
 
             <ScrollDownButton slideDownByOneSlide={slideDownByOneSlide} />
+
+            <div
+                style={{
+                    position: 'absolute',
+                    width: '200px',
+                    bottom: '20px',
+                    left: '20px'
+                }}
+            >
+                <BookNowButtonParkInn
+                    linkUrl={'https://www.radissonhotels.com/en-us/hotels/park-inn-riga-valdemara'}
+                    isMobile={true}
+                />
+            </div>
         </div>
     )
 }

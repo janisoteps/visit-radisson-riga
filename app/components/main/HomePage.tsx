@@ -9,6 +9,11 @@ import Page7 from "~/components/main/pages/Page7";
 import Page8 from "~/components/main/pages/Page8";
 import {pageStyles} from '~/components/main/pages/pageStyles';
 import {useState} from "react";
+import Page4Gallery from "~/components/main/pages/Page4Gallery";
+import Page5Gallery from "~/components/main/pages/Page5Gallery";
+import Page6Gallery from "~/components/main/pages/Page6Gallery";
+import Page7Gallery from "~/components/main/pages/Page7Gallery";
+import Page8Gallery from "~/components/main/pages/Page8Gallery";
 
 interface HomePageProps {
     isMobile: boolean
@@ -69,29 +74,41 @@ export default function HomePage({isMobile}: HomePageProps) {
             content: <Page4 isHome={true} isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style:  pageStyles.page4StyleMobile
         },
-        // {
-        //     content: <Page4Gallery />,
-        //     style:  pageStyles.page4StyleMobile
-        // },
+        {
+            content: <Page4Gallery slideDownByOneSlide={slideDownByOneSlide} />,
+            style:  pageStyles.page4StyleMobile
+        },
         {
             content: <Page5 isHome={true} isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style: pageStyles.page5StyleMobile
         },
-        // {
-        //     content: <Page5Gallery />,
-        //     style:  pageStyles.page5StyleMobile
-        // },
+        {
+            content: <Page5Gallery slideDownByOneSlide={slideDownByOneSlide} />,
+            style:  pageStyles.page5StyleMobile
+        },
         {
             content: <Page6 isHome={true} isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style: pageStyles.page6StyleMobile
+        },
+        {
+            content: <Page6Gallery slideDownByOneSlide={slideDownByOneSlide} />,
+            style:  pageStyles.page6StyleMobile
         },
         {
             content: <Page7 isHome={true} isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style: pageStyles.page7StyleMobile
         },
         {
-            content: <Page8 isHome={true} isMobile={isMobile} />,
+            content: <Page7Gallery slideDownByOneSlide={slideDownByOneSlide} />,
+            style:  pageStyles.page7StyleMobile
+        },
+        {
+            content: <Page8 isHome={true} isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style: pageStyles.page8StyleMobile
+        },
+        {
+            content: <Page8Gallery />,
+            style:  pageStyles.page8StyleMobile
         },
     ];
 

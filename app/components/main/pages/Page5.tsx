@@ -126,40 +126,30 @@ export default function Page5({isHome, isMobile, slideDownByOneSlide}: Page5Prop
                     </div>
                 </div>
 
-                <div
-                    style={{
-                        width: '100%',
-                        height: '70vh'
-                    }}
-                >
-                    <ImageCarouselParent
-                        width={'100%'}
-                        height={'50%'}
-                        borderWidth={'10px 10px 5px 10px'}
-                        urlList={[
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/RIXPV-Exterior-1.webp?alt=media&token=50d0f899-2da7-487d-9259-498a01bc6a5a',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-2.webp?alt=media&token=d6f6be2a-51a1-4aa5-b317-b0ce5a20d97c',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-8.webp?alt=media&token=6d2f775d-94d9-4e73-98a7-c4fb79fcfdfc',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-3.webp?alt=media&token=376811b5-d22d-45a5-b4f9-7bd1981e12e1',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-7.webp?alt=media&token=90654d28-7697-430b-ae08-6d29451a90f5',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-4.webp?alt=media&token=a8eb8854-55d1-4c04-bb50-dcc9f9609006',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-9.webp?alt=media&token=e89273d9-c5ac-4041-9498-bad53d6c4266',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-5.webp?alt=media&token=4e11f3d2-a26f-4db6-ab12-ab7a0fc7211b'
-                        ]}
-                    />
-
+                {!isHome && (
                     <div
                         style={{
-                            height: '50%',
-                            backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-6.webp?alt=media&token=6adb723c-e836-4034-a985-2452d9137cb2")',
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            borderWidth: '5px 10px 10px 10px',
-                            borderColor: 'white'
+                            width: '100%',
+                            height: '70vh'
                         }}
                     >
+                        <ImageCarouselParent
+                            width={'100%'}
+                            height={'100%'}
+                            borderWidth={'10px 10px 5px 10px'}
+                            urlList={[
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/RIXPV-Exterior-1.webp?alt=media&token=50d0f899-2da7-487d-9259-498a01bc6a5a',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-2.webp?alt=media&token=d6f6be2a-51a1-4aa5-b317-b0ce5a20d97c',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-8.webp?alt=media&token=6d2f775d-94d9-4e73-98a7-c4fb79fcfdfc',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-3.webp?alt=media&token=376811b5-d22d-45a5-b4f9-7bd1981e12e1',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-7.webp?alt=media&token=90654d28-7697-430b-ae08-6d29451a90f5',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-4.webp?alt=media&token=a8eb8854-55d1-4c04-bb50-dcc9f9609006',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-9.webp?alt=media&token=e89273d9-c5ac-4041-9498-bad53d6c4266',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/valdemara-park-inn-int-5.webp?alt=media&token=4e11f3d2-a26f-4db6-ab12-ab7a0fc7211b'
+                            ]}
+                        />
                     </div>
-                </div>
+                )}
 
                 {isHome && (
                     <ScrollDownButton slideDownByOneSlide={slideDownByOneSlide} />

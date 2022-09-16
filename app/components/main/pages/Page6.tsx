@@ -116,28 +116,30 @@ export default function Page6({isHome, isMobile, slideDownByOneSlide}: Page6prop
                     </div>
                 </div>
 
-                <div
-                    style={{
-                        width: '100%',
-                        height: '70vh'
-                    }}
-                >
-                    <ImageCarouselParent
-                        width={'100%'}
-                        height={'100%'}
-                        borderWidth={'10px 10px 5px 10px'}
-                        urlList={[
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-1.webp?alt=media&token=e576cad8-1096-4d72-a737-7702589dd7e7',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-2.webp?alt=media&token=76e991cd-99c7-4cf2-a3a8-4fd28fadf170',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-4.webp?alt=media&token=623d16e7-9d64-4970-81e8-64a84f98914d',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-5.webp?alt=media&token=a63aea8b-2d19-4e77-a139-ddff6bf5bad2',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/parkinn-barona-interior-5.webp?alt=media&token=c4f25c83-b05f-4685-af14-38be01e5b7f7',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/parkinn-barona-interior-6.webp?alt=media&token=37463300-fc42-44ea-b8e2-1b8095f47484',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/parkinn-barona-interior-7.webp?alt=media&token=4aeb9a5b-9fae-486c-b662-1ef7a7cfbd6d',
-                            'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/parkinn-barona-interior-8.webp?alt=media&token=e6339b6d-887a-4eab-bb41-3c08c748549c'
-                        ]}
-                    />
-                </div>
+                {!isHome && (
+                    <div
+                        style={{
+                            width: '100%',
+                            height: '70vh'
+                        }}
+                    >
+                        <ImageCarouselParent
+                            width={'100%'}
+                            height={'100%'}
+                            borderWidth={'10px 10px 5px 10px'}
+                            urlList={[
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-1.webp?alt=media&token=e576cad8-1096-4d72-a737-7702589dd7e7',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-2.webp?alt=media&token=76e991cd-99c7-4cf2-a3a8-4fd28fadf170',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-4.webp?alt=media&token=623d16e7-9d64-4970-81e8-64a84f98914d',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/barona-interior-5.webp?alt=media&token=a63aea8b-2d19-4e77-a139-ddff6bf5bad2',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/parkinn-barona-interior-5.webp?alt=media&token=c4f25c83-b05f-4685-af14-38be01e5b7f7',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/parkinn-barona-interior-6.webp?alt=media&token=37463300-fc42-44ea-b8e2-1b8095f47484',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/parkinn-barona-interior-7.webp?alt=media&token=4aeb9a5b-9fae-486c-b662-1ef7a7cfbd6d',
+                                'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/parkinn-barona-interior-8.webp?alt=media&token=e6339b6d-887a-4eab-bb41-3c08c748549c'
+                            ]}
+                        />
+                    </div>
+                )}
 
                 {isHome && (
                     <ScrollDownButton slideDownByOneSlide={slideDownByOneSlide} />
