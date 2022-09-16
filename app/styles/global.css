@@ -851,6 +851,34 @@ body {
   justify-content: center;
 }
 
+.scroll-button {
+  -webkit-animation: MoveUpDown 1s linear infinite;
+          animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+@-webkit-keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .hover\:scale-100:hover {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
