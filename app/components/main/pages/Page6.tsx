@@ -4,10 +4,11 @@ import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page6props {
     isHome: boolean,
-    isMobile: boolean
+    isMobile: boolean,
+    slideDownByOneSlide?: () => void
 }
 
-export default function Page6({isHome, isMobile}: Page6props) {
+export default function Page6({isHome, isMobile, slideDownByOneSlide}: Page6props) {
 
     if (isMobile) {
         return (
@@ -139,7 +140,7 @@ export default function Page6({isHome, isMobile}: Page6props) {
                 </div>
 
                 {isHome && (
-                    <ScrollDownButton />
+                    <ScrollDownButton slideDownByOneSlide={slideDownByOneSlide} />
                 )}
             </div>
         )

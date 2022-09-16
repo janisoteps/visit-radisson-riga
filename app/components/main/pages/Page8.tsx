@@ -1,7 +1,6 @@
 import {filterColors} from "~/constants/colors";
 import ImageCarouselParent from "~/components/layout/shared/carousel/ImageCarouselParent";
 import BookNowButtonBlu from "~/components/layout/shared/book/BookNowButtonBlu";
-import ScrollDownButton from "~/components/layout/shared/ScrollDownButton";
 
 interface Page8Props {
     isHome: boolean,
