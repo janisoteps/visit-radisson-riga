@@ -8,8 +8,6 @@ import Page6 from "~/components/main/pages/Page6";
 import Page7 from "~/components/main/pages/Page7";
 import Page8 from "~/components/main/pages/Page8";
 import {pageStyles} from '~/components/main/pages/pageStyles';
-import Page4Gallery from "~/components/main/pages/Page4Gallery";
-import Page5Gallery from "~/components/main/pages/Page5Gallery";
 
 interface HomePageProps {
     isMobile: boolean
@@ -68,18 +66,18 @@ export default function HomePage({isMobile}: HomePageProps) {
             content: <Page4 isHome={true} isMobile={isMobile} />,
             style:  pageStyles.page4StyleMobile
         },
-        {
-            content: <Page4Gallery />,
-            style:  pageStyles.page4StyleMobile
-        },
+        // {
+        //     content: <Page4Gallery />,
+        //     style:  pageStyles.page4StyleMobile
+        // },
         {
             content: <Page5 isHome={true} isMobile={isMobile} />,
             style: pageStyles.page5StyleMobile
         },
-        {
-            content: <Page5Gallery />,
-            style:  pageStyles.page5StyleMobile
-        },
+        // {
+        //     content: <Page5Gallery />,
+        //     style:  pageStyles.page5StyleMobile
+        // },
         {
             content: <Page6 isHome={true} isMobile={isMobile} />,
             style: pageStyles.page6StyleMobile
