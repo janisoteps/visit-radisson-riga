@@ -20,7 +20,7 @@ export const pageStyles: PageStyles = {
         backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/map-riga.png?alt=media&token=06aba16c-6214-4323-a878-a6cc32bc0b05")',
     },
     page2StyleMobile: {
-        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/map-riga.png?alt=media&token=06aba16c-6214-4323-a878-a6cc32bc0b05")',
+        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/map-mobile-1.webp?alt=media&token=fefad939-aad1-42f0-85fc-6473cf440f86")',
         backgroundPosition: 'center'
     },
     page3Style: {

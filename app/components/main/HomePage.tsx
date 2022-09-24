@@ -63,7 +63,7 @@ export default function HomePage({isMobile}: HomePageProps) {
             style: pageStyles.page1StyleMobile
         },
         {
-            content: <Page2 isMobile={isMobile} />,
+            content: <Page2 isMobile={isMobile} slideDownByOneSlide={slideDownByOneSlide} />,
             style: pageStyles.page2StyleMobile
         },
         {
