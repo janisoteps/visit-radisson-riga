@@ -6,11 +6,12 @@ interface ImageCarouselParentProps {
     urlList: string[],
     borderWidth: string,
     width: string,
-    height: string
+    height: string,
+    isMobile?: boolean
 }
 
 export default function ImageCarouselParent(
-    {urlList, borderWidth, width, height}: ImageCarouselParentProps
+    {urlList, borderWidth, width, height, isMobile = false}: ImageCarouselParentProps
 ) {
     const imageCarouselRef = useRef<HTMLInputElement>(null);
     const [carouselWidth, setCarouselWidth] = useState<number>(300);
@@ -39,6 +40,7 @@ export default function ImageCarouselParent(
                     width={'100%'}
                     height={'100%'}
                     borderRadius={'0px'}
+                    isMobile={isMobile}
                 >
                     {urlList.map((imageUrl, idx) => {
                         return (
