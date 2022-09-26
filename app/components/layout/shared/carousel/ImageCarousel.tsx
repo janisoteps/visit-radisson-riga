@@ -4,7 +4,8 @@ interface ImageCarouselProps {
     children: React.ReactElement[],
     width: string,
     height: string,
-    borderRadius?: string
+    borderRadius?: string,
+    isMobile?: boolean
 }
 
 export interface SlideCarousel {
@@ -13,14 +14,15 @@ export interface SlideCarousel {
 
 
 export default function ImageCarousel(
-    {children, width = '100%', height = '300px', borderRadius = '10px'}: ImageCarouselProps
+    {children, width = '100%', height = '300px', borderRadius = '10px', isMobile = false}: ImageCarouselProps
 ) {
     const [imageShownIdx, setImageShownIdx] = useState<number>(0);
 
     useEffect(() => {
+        const slideDelay = isMobile ? 1500 : 3000;
         const slideInterval = setInterval(() => {
             slideCarousel(imageShownIdx + 1);
-        }, 3000);
+        }, slideDelay);
 
         return () => {
             if (slideInterval) {

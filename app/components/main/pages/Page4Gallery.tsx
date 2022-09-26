@@ -44,6 +44,7 @@ export default function Page4Gallery({slideDownByOneSlide}: Page4GalleryProps) {
                 }}
             >
                 <ImageCarouselParent
+                    isMobile={true}
                     width={'100%'}
                     height={'100%'}
                     borderWidth={'5px'}

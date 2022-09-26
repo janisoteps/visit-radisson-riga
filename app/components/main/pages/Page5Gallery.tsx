@@ -48,6 +48,7 @@ export default function Page5Gallery({slideDownByOneSlide}: Page5GalleryProps) {
                 }}
             >
                 <ImageCarouselParent
+                    isMobile={true}
                     width={'100%'}
                     height={'100%'}
                     borderWidth={'5px'}
