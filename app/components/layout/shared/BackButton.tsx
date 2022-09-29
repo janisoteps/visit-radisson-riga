@@ -10,7 +10,7 @@ export default function BackButton({backgroundColor = 'white', isMobile}: BackBu
 
     return (
         <Link
-            to={'/'}
+            to={'/?slide=1'}
         >
             <div
                 style={{
