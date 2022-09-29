@@ -8,12 +8,13 @@ import Page6 from "~/components/main/pages/Page6";
 import Page7 from "~/components/main/pages/Page7";
 import Page8 from "~/components/main/pages/Page8";
 import {pageStyles} from '~/components/main/pages/pageStyles';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Page4Gallery from "~/components/main/pages/Page4Gallery";
 import Page5Gallery from "~/components/main/pages/Page5Gallery";
 import Page6Gallery from "~/components/main/pages/Page6Gallery";
 import Page7Gallery from "~/components/main/pages/Page7Gallery";
 import Page8Gallery from "~/components/main/pages/Page8Gallery";
+import isStringNumeric from "~/utils/isStringNumeric";
 
 interface HomePageProps {
     isMobile: boolean
@@ -111,6 +112,18 @@ export default function HomePage({isMobile}: HomePageProps) {
             style:  pageStyles.page8StyleMobile
         },
     ];
+
+    useEffect(() => {
+        const searchString = window.location.search;
+        if (searchString.length > 0 && searchString.includes('slide')) {
+            const slideString = searchString.split('slide=')[1];
+
+            if (isStringNumeric(slideString)) {
+                const slideNr = parseInt(slideString, 10);
+                setCurrentSlide(slideNr);
+            }
+        }
+    }, []);
 
     function slideDownByOneSlide() {
         const slideCount = isMobile ? parallaxSlidesMobile.length : parallaxSlides.length;
