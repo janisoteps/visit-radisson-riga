@@ -207,7 +207,7 @@ export default function Page8({isHome, isMobile, slideDownByOneSlide}: Page8Prop
                                 width: '100%',
                                 height: 'auto'
                             }}
-                            src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-daugava-logo-2.png?alt=media&token=4d47e7c3-7b57-417d-a499-8c9a0bd68090'}
+                            src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/Radisson_logo%20copy-Daugava_gaiss.png?alt=media&token=69a17e1b-adb9-42a9-bc9c-0bf3a7413d40'}
                         />
                     </div>
 
