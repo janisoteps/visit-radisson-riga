@@ -180,7 +180,7 @@ export default function Page7({isHome, isMobile, slideDownByOneSlide}: Page7Prop
                                 width: '100%',
                                 height: 'auto'
                             }}
-                            src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/blu-ridzene-logo-2.png?alt=media&token=4f8d3911-6234-47e7-a50b-f9aa5c748cef'}
+                            src={'https://firebasestorage.googleapis.com/v0/b/visit-radisson-riga.appspot.com/o/Radisson_logo%20copy-Ridzene_gaiss.png?alt=media&token=18c69508-9867-4dc3-aa53-1341ac24ed60'}
                         />
                     </div>
 
